@@ -66,10 +66,31 @@ ul,li{
  
   list-style: none;
 }
-a{
-  color: white;
+.crsltag{
+  color: black;
   text-decoration: none;
 
+}
+
+.des{
+  display:flex;
+  flex-direction:column;
+  padding:20px;
+}
+.name{
+  text-align: center;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.name{
+  color: white;
+}
+a:hover{
+cursor: pointer;
+background-color: white;
 }
 .icon-container{
   font-size: 20px;
@@ -82,3 +103,4 @@ a{
     padding-left: 16px;
    margin: auto;
 }
+
