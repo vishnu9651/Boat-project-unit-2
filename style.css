@@ -492,6 +492,12 @@ h4 p{
   color: grey;
 }
 /* bothead */
+.cnnt{
+  
+  margin: auto;
+  display: flex !important;
+  align-items: center;
+}
 .hedsrow{
   display: flex;
   flex-direction: row;
