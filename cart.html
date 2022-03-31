@@ -34,14 +34,14 @@
     <h3 class="promocode"></h3>
 
     <div class="promo-section"></div>
-    
+
     <div class="pbox">
         <p class="total"></p>
         <p class="discount"></p>
         <p class="shipping"></p>
         <p class="pay"></p>
     </div>
-    
+
     <div class="paybox"></div>
 
 </body>
@@ -52,7 +52,7 @@
     var cartdata = JSON.parse(localStorage.getItem("cart"));
 
     var imgbox = document.createElement("div")
-    imgbox.setAttribute("class", "imgbox")
+    imgbox.setAttribute("class", "imgbox");
 
     var img = document.createElement("img");
     img.setAttribute("class", "bag")
@@ -81,37 +81,37 @@
 
         cartdata.map(function (el) {
             var box = document.createElement("div")
-            box.setAttribute("class","productbox")
+            box.setAttribute("class", "productbox")
 
             var details = document.createElement("div")
-            details.setAttribute("class","details");
+            details.setAttribute("class", "details");
 
             var img = document.createElement("img");
             img.src = el.image;
-            img.setAttribute("class","pic")
-            
+            img.setAttribute("class", "pic")
+
             var nam1 = document.createElement("h2");
             nam1.textContent = el.name;
-            nam1.setAttribute("class","item")
+            nam1.setAttribute("class", "item")
 
             var nam2 = document.createElement("h4");
             nam2.textContent = el.type;
-            nam2.setAttribute("class","prod")
-            
+            nam2.setAttribute("class", "prod")
+
             var amount = document.createElement("div");
-            amount.setAttribute("class","mrp")
+            amount.setAttribute("class", "mrp")
 
             var prc = document.createElement("h5");
             prc.textContent = `Rs ${el.price}`
-            prc.setAttribute("class","pricing")
+            prc.setAttribute("class", "pricing")
 
             var stkprc = document.createElement("s");
             stkprc.textContent = el.stkPrice
-            stkprc.setAttribute("class","strike")
+            stkprc.setAttribute("class", "strike")
 
             var offer = document.createElement("p");
             offer.textContent = el.off
-            offer.setAttribute("class","txt")
+            offer.setAttribute("class", "txt")
 
             amount.append(prc, stkprc, offer)
 
@@ -120,7 +120,7 @@
             box.append(img, details)
 
             document.querySelector(".products").append(box);
-        })
+        });
 
         //*********************************************************************
 
@@ -150,7 +150,7 @@
             document.querySelector(".pay").innerText = `Pay:Rs ${total + 40}`;
         }
 
-        
+
 
         document.querySelector(".total").innerText = `Total:${total}`;
 
@@ -178,22 +178,19 @@
                     document.querySelector(".shipping").innerText = `Shipping:      Rs ${40}`;
                     document.querySelector(".pay").innerText = `Pay:        Rs ${out + 40}`;
                 }
-                
+
             }
             else {
                 alert("wrong Promo Code")
             }
 
-        } 
+        }
 
         var paybtn = document.createElement("btn");
-        paybtn.setAttribute("class","payment");
+        paybtn.setAttribute("class", "payment");
         paybtn.innerText = "Proceed To Pay";
 
         document.querySelector(".paybox").append(paybtn);
-    
-    }
 
-    
-
+    };
 </script>
