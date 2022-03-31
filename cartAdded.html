@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/24c494a6b6.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="Add to cart.css">
+    <link rel="stylesheet" href="cartAdded.css">
 </head>
 <body>
     <div class="announcment">
@@ -47,37 +47,12 @@
      </div>
      <div id="inner1">
          <p>Home/boAt Rockerz 235 V2</p>
-         <div id="box1">
-            <div>
-                <div class="mini1">
-                    <p>You save 66%</p>
-                </div>
-                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5324091f-9f39-463f-bf20-e603c796349c_540x.png?v=1625045742" alt="">
-            </div>
-            <div id="beside">
-                <h1>boAt Rockerz 235 V2</h1>
-                <p>BLUETOOTH EARPHONES</p>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <div id="box2">
-                    <!-- <div class="mini2">
-                        <div><h2>Rs.999.00</h2></div>
-                        <div><h4>Rs.2,990.00</h4></div>
-                    </div> -->
-                    <p>YOU SAVE 66%</p>
-                    <!-- <p>Inclusive if all taxes</p>
-                    <div id="box3">
-                        <div></div>
-                        <div></div>
-                     </div> -->
-                </div>
-            </div>
+         <div id="save">
+             <div>YOU SAVE 66%</div>
          </div>
+         <div id="inside"></div>
      </div>
-     <button><a href="cart.html">Go to Cart</a></button>
+     <!-- <button><a href="cart.html">Go to Cart</a></button> -->
 </body>
 </html>
 
@@ -85,9 +60,14 @@
     
     var Boat = [
         {
+           image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/48d16e65-e295-45ef-a59d-ee85f787001d_540x.png?v=1625044995",
+           name: "boAt Rockerz 235 V2",
+           type: "BLUETOOTH EARPHONES",
            price: "Rs.999.00",
-           stkPrice: "Rs.2,990.00"
-        }
+           stkPrice: "Rs.2,990.00",
+           off: "YOU SAVE 66%",
+           text: "Inclusive of all taxes"
+        },
     ]
 
     var cartData = JSON.parse(localStorage.getItem("cart"))||[];
@@ -96,51 +76,61 @@
     });
 
     function display(Boat){
-
-        document.querySelector("#box2").innerHTML = "";
+       console.log("Hello")
+        document.querySelector("#inside").innerHTML = "";
         Boat.map(function(el){      
-        var box = document.createElement("div")
+            var box = document.createElement("div")
+            
+            var img = document.createElement("img");
+            img.src = el.image;
+            img.setAttribute("class","pic")
+            
+            var nam1 = document.createElement("h2");
+            nam1.textContent = el.name;
+            nam1.setAttribute("class","item")
 
-         var nm = document.createElement("p");
-         nm.textContent = "Inclusive of all taxes"
-         nm.style.color = "grey";
-        
-         var img = document.createElement("img");
-         img.src = el.pic;
-         
-         var nam = document.createElement("h4");
-         nam.textContent = el.name;
-         nam.style.color = "black"
-        
-         var amount = document.createElement("div");
-         amount.setAttribute("class","mrp")
+            var nam2 = document.createElement("h4");
+            nam2.textContent = el.type;
+            nam2.setAttribute("class","prod")
+            
+            var amount = document.createElement("div");
+            amount.setAttribute("class","mrp")
 
-         var prc = document.createElement("h5");
-         prc.textContent = el.price
-         prc.setAttribute("class","pricing")
+            var prc = document.createElement("h5");
+            prc.textContent = el.price
+            prc.setAttribute("class","pricing")
 
-         var stkprc = document.createElement("h6");
-         stkprc.textContent = el.stkPrice
-         stkprc.setAttribute("class","strike")
+            var stkprc = document.createElement("h6");
+            stkprc.textContent = el.stkPrice
+            stkprc.setAttribute("class","strike")
 
-         var btn = document.createElement("button")
-         btn.innerText = "ADD TO CART"
-         btn.setAttribute("class","item")
-         btn.addEventListener("click",function(){
-             addToCart(el)
-         })
-           
-         amount.append(prc,stkprc)
-         box.append(amount,nm,btn)
-         document.querySelector("#box2").append(box);
+            var offer = document.createElement("p");
+            offer.textContent = el.off
+            offer.setAttribute("class","txt")
+            
+            var small = document.createElement("p");
+            small.textContent = el.text
+            small.setAttribute("class","mini")
+
+             var btn = document.createElement("button")
+             btn.innerText = "ADD TO CART"
+             btn.setAttribute("class","bag")
+             btn.addEventListener("click",function(){
+                 addToCart(el)
+             })
+            
+            amount.append(prc,stkprc)
+            box.append(img,nam1,nam2,amount,offer,small,btn)
+            document.querySelector("#inside").append(box);
     })
-    }
+    };
    
     function addToCart(el){
-        // console.log("cart")
+        console.log("cart")
         cartData.push(el)
         localStorage.setItem("cart",JSON.stringify(cartData))
-        alert("Item added to cart")
+        alert("Item added to cart") 
+        window.location.href = "cart.html";
     }
     
-</script>
+</script> 
