@@ -44,7 +44,7 @@ var productData = [
   name: "boAt  Deuce 500",
   price: 499.00,
   strikedPrice:899.00 ,
-  category: "wireless earphones" ,
+  category: "cable" ,
  },
  
  { 
@@ -74,6 +74,24 @@ var productData = [
   name: "boAt watch Iris",
   price:  4499.00,
   strikedPrice:11999.00 ,
+  category: "smart watchs" ,
+ },
+ { 
+  Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/e7910a39-186a-41f6-ac57-fc3e84108104_360x.png?v=1625045106" ,
+  discount: " you save 58%"  ,
+  rating: " 5 star " , 
+  name: "boAt Storm",
+  price:  2499.00,
+  strikedPrice:5999.00 ,
+  category: "smart watchs" ,
+ },
+ { 
+  Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Black_2_360x.png?v=1639486284" ,
+  discount: " you save 61%"  ,
+  rating: " 5 star " , 
+  name: "boAt watch Mystiq",
+  price:  3499.00,
+  strikedPrice:8990.00 ,
   category: "smart watchs" ,
  },
  
@@ -138,7 +156,7 @@ var productData = [
   category: "wired headphones" ,
  },
  { 
-  Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/eb8e0fbd-c412-48b3-9c91-5b49ddf35800_360x.png?v=1625045744" ,
+  Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_420x.png?v=1625046144" ,
   discount: " you save 70%"  ,
   rating: " 5 star " , 
   name: "boAt Rockerz 550",
