@@ -176,7 +176,7 @@ var productData = [
  
  ]
  
-  var cartArr = []
+  var cartArr = JSON.parse(localStorage.getItem("cart")) || []
   document.getElementById("btn1").addEventListener("click" , btn1)
 
   function btn1(){
