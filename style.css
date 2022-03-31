@@ -368,12 +368,12 @@ a:hover {
   flex-direction: row;
   max-width: 600px;
   margin: auto;
-  padding: 20px;
+  padding: 30px;
 }
 .iconrow {
   display: flex;
   flex-direction: row;
-  padding: 15px;
+  padding: 20px;
 }
 .iconrow p {
   color: #fff;
@@ -442,26 +442,32 @@ a:hover {
   width: 30px;
   height: 30px;
 }
-/* shoppng */
-.btnshop{
-  color: #000;
-  background-color: #fff;
-  width: 150px;
-  height: 36px;
-  border-width: 0px;
-  border-radius: 15px;
-  margin: auto;
-  font-size: 20px;
-}
-.shpng a{
-color: #000;
-}
+
 /* boatblog */
 .article{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  width: 90%;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1,1fr);
+  gap: 20px;
   margin: auto;
+}
+.artcbtn{
+  width: 150px;
+  height: 36px;
+  border-width: 0px;
+  border-radius: 10px;
+  margin: auto;
+  font-size: 20px;
+  border: 1px solid red;
+}
+.artcbtn a{
+  color: #000;
+  }
+#boatblog  h2{
+ color: white;
+ font-size: 50px;
+ text-align: center;
 }
 h5{
   color: white;
@@ -493,3 +499,46 @@ h4 p{
   padding: 10px;
   margin: auto;
 }
+
+/* shopsec */
+#shopsec{
+  padding: 30px;
+  margin: auto;
+}
+.secheading{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+/* shoppng */
+.shpng{
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1,1fr);
+  gap: 20px;
+  margin: auto;
+  padding: 30px;
+}
+.btnshop{
+  color: #000;
+  background-color: #fff;
+  width: 150px;
+  height: 36px;
+  border-width: 0px;
+  border-radius: 15px;
+  margin: auto;
+  font-size: 20px;
+
+}
+.shpng a{
+color: #000;
+}
+.shpn1{
+  background-color: #e03f3f;
+  padding: 20px;
+ 
+}
+
+
