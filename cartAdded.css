@@ -59,115 +59,77 @@ body{
    background-color: white;
    font-size: 16px;
    }
-   
+
    #inner1{
-       height: 600px;
-       width: 100%;
-       background-color: #292929;
+       margin: auto;
+       height: 1020px;
+       width: 70%;
+       background-color: #212121;
    }
    #inner1>p{
+       font-size: 20px;
+       margin-top: 5%;
        margin-left: 5%;
-       color: rgb(136, 126, 126)
+       color: grey;
    }
-   
-   #box1{
-       display: grid;
-       grid-template-columns: repeat(2,1fr);
-       gap: 20px;
-   }
-   #box1>div{
-       margin-top: 5%;
-       margin-left: 10%;
-       height: 450px;
-       width: 70%;
-   }
-   
-   .mini1{
-       margin-top: 5%;
-       height: 50px;
-       width: 25%;
-   }
-   .mini1>p{
-       font-size: 18px;
+   #save>div{
+       height: 30px;
+       width: 15%;
+       margin-left: 5%;
+       font-size: 20px;
+       padding: 10px;
        color: red;
        background-color: white;
    }
-   
-   #box1 img{
-       margin-left: 10%;
-       max-width: 85%;
-       border-image-width: auto;
-   }
-   
-   #beside>h1{
-       margin-top: 15%;
-       color: white;
-   }
-   #beside>p{
-       line-height: 10%;
-       color: grey;
-   }
-   #beside>span{
-       color: red;
-   }
-   #box2{
-       margin-top: 3%;
-       height: 400px;
-       width: 100%;
-
-   }
-   /* .mini2{
-       display: flex;
-   }
-   .mini2>div{
-    height: 60px;
-    width: 30%;
-   }
-   .mini2 h2{
-       color: #e53d3d;
-   }
-   .mini2 h4{
-       color:grey;
-       text-decoration: line-through;
-   }
-   div~p{
-       color: white;
-       line-height: 10%;
-   }
-   div~p~p{
-       line-height: normal;
-   }
-
-   #box3{
-       display: grid;
-       grid-template-columns: repeat(2,1fr);
-   }
-
-   #box3>div{
-       height: 80px;
-       width: 100%;
-       border: 1px solid red;
-   } */
     
-    .mrp{
-       display: flex;
-       justify-content: space-between;
+   #inside{
+       margin: auto;
+       height: 300px;
+       width: 60%;
    }
-   .pricing{
-       font-size: 30px;
-       color: #e53d3d;
-   }
-   .strike{
-       font-size: 23px;
-       color: grey;
-       text-decoration: line-through;
-       margin-right: 25%;
+   .pic{
+       margin-top: -5%;
+       margin-left: 5%;
    }
    .item{
-       height: 50px;
-       width: 60%;
-       margin-left: 20%;
+       text-align: center;
        color: white;
+   }
+   .prod{
+       color: grey;
+       text-align: center;
+   }
+   .mrp{
+       display: flex;
+       justify-content: space-evenly;
+   }
+   .pricing{
+       margin-top: 0%;
+       font-size: 30px;
+       color: rgb(209, 71, 71);
+   }
+   .strike{
+       margin-top: 0%;
+       font-size: 30px;
+       color: grey;
+       text-decoration: line-through;
+   }
+   .txt{
+       text-align: center;
+       margin-top: 0%;
+       color: white;
+       font-size: 20px;
+   }
+   .mini{
+       color: white;
+       text-align: center;
+   }
+   .bag{
+       margin-top: 0%;
+       margin-left: 30%;
+       height: 50px;
+       width: 40%;
+       border: 2px solid white;
        background-color: black;
-       border: 1px solid white;
+       color: white;
    }
