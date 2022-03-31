@@ -71,7 +71,7 @@ body {
   0% {
     background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Deuce500_wbann_2000x650_9bd74345-b66d-4504-a6b6-6737eba3233e_2048x.jpg?v=1648199526");
   }
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
   35% {
     background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AB900--Banner_2048x.jpg?v=1648034246");
   }
@@ -162,7 +162,7 @@ body {
   height: 250px;
   width: 300px;
 }
-=======
+/* ======= */
  /* top scroling */
  .top_scroling{
     margin-top: 420px;
@@ -289,7 +289,7 @@ color: red;
    height: 320px;
    width: 360px;
  }
->>>>>>> 3fcc4b7c789abfbd37e23acfa0dae4a464802cea
+/* >>>>>>> 3fcc4b7c789abfbd37e23acfa0dae4a464802cea */
 
 /* footer */
 

@@ -7,6 +7,7 @@ var productData = [
   price: 1299.00,
   strikedPrice:2999.00 ,
   category: "wireless earbuds" ,
+  btn1 : "btn1"
  
  },
  { 
@@ -17,6 +18,7 @@ var productData = [
   price: 1399.00,
   strikedPrice:2999.00 ,
   category: " wireless earphones" ,
+  btn2 : "btn2"
  },
  { 
   Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_529ecf13-c993-4fe7-a2d6-9357f1a47db4_360x.png?v=1645164257" ,
@@ -26,16 +28,9 @@ var productData = [
   price: 2799.00,
   strikedPrice:7999.00 ,
   category: " smart watchs" ,
+  btn : "btn3"
  },
- { 
-  Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_1_e171664a-1254-45e6-9dde-2ac4f0a815c9_360x.png?v=1648466727" ,
-  discount: "  NEW-ARRIVAL"  ,
-  rating: " 5 star " , 
-  name: "boAt Rockerz 235 Pro",
-  price:  999.00,
-  strikedPrice:1999.00 ,
-  category: "wireless earphones" ,
- },
+ 
  
  { 
   Image: " https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_541e4150-6924-467d-b193-1793daa2e283_360x.png?v=1648119560" ,
@@ -45,6 +40,7 @@ var productData = [
   price: 499.00,
   strikedPrice:899.00 ,
   category: "cable" ,
+  btn : "btn4"
  },
  
  { 
@@ -55,17 +51,19 @@ var productData = [
   price:  2299.00,
   strikedPrice:4990.00 ,
   category: "wireless earbuds" ,
+  btn : "btn5"
+ },
+ { 
+  Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_420x.png?v=1625046144" ,
+  discount: " you save 70%"  ,
+  rating: " 5 star " , 
+  name: "boAt Rockerz 550",
+  price:  1199.00,
+  strikedPrice:4999.00 ,
+  category: "wireless headphones" ,
+  btn : "btn6"
  },
  
- { 
-  Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/e7910a39-186a-41f6-ac57-fc3e84108104_360x.png?v=1625045106" ,
-  discount: " you save 58%"  ,
-  rating: " 5 star " , 
-  name: "boAt Storm",
-  price:  2499.00,
-  strikedPrice:5999.00 ,
-  category: "smart watchs" ,
- },
  
  { 
   Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/mainblack_360x.png?v=1640237575" ,
@@ -75,6 +73,7 @@ var productData = [
   price:  4499.00,
   strikedPrice:11999.00 ,
   category: "smart watchs" ,
+  btn : "btn7"
  },
  { 
   Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/e7910a39-186a-41f6-ac57-fc3e84108104_360x.png?v=1625045106" ,
@@ -84,6 +83,7 @@ var productData = [
   price:  2499.00,
   strikedPrice:5999.00 ,
   category: "smart watchs" ,
+  btn : "btn8"
  },
  { 
   Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Black_2_360x.png?v=1639486284" ,
@@ -93,6 +93,7 @@ var productData = [
   price:  3499.00,
   strikedPrice:8990.00 ,
   category: "smart watchs" ,
+  btn : "btn9"
  },
  
  { 
@@ -103,6 +104,7 @@ var productData = [
   price: 1499.00,
   strikedPrice:3999.00 ,
   category: "wireless earphones" ,
+  btn : "btn10"
  },
  
  { 
@@ -113,6 +115,7 @@ var productData = [
   price:  1199.00,
   strikedPrice:3999.00 ,
   category: "wireless headphones" ,
+  btn : "btn11"
  },
 
  
@@ -124,6 +127,7 @@ var productData = [
   price:  999.00,
   strikedPrice:2999.00 ,
   category: "wireless earphones" ,
+  btn : "btn12"
  },
  
  { 
@@ -134,6 +138,7 @@ var productData = [
   price:  399.00,
   strikedPrice:999.00 ,
   category: "wired earphones" ,
+  btn : "btn13"
  },
   
  { 
@@ -144,6 +149,7 @@ var productData = [
   price:  379.00,
   strikedPrice:1290.00 ,
   category: "wired earphones" ,
+  btn : "btn14"
  },
   
  { 
@@ -154,16 +160,146 @@ var productData = [
   price:  799.00,
   strikedPrice:2499.00 ,
   category: "wired headphones" ,
+  btn : "btn15"
  },
+
  { 
-  Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_420x.png?v=1625046144" ,
-  discount: " you save 70%"  ,
+  Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_1_e171664a-1254-45e6-9dde-2ac4f0a815c9_360x.png?v=1648466727" ,
+  discount: "  NEW-ARRIVAL"  ,
   rating: " 5 star " , 
-  name: "boAt Rockerz 550",
-  price:  1199.00,
-  strikedPrice:4999.00 ,
-  category: "wireless headphones" ,
+  name: "boAt Rockerz 235 Pro",
+  price:  999.00,
+  strikedPrice:1999.00 ,
+  category: "wireless earphones" ,
+  btn : "btn100"
  },
- 
  
  ]
+ 
+  var cartArr = []
+  document.getElementById("btn1").addEventListener("click" , btn1)
+
+  function btn1(){
+   event.preventDefault();
+   cartArr.push( productData[0])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn2").addEventListener("click" , btn2)
+
+  function btn2(){
+   event.preventDefault();
+   cartArr.push( productData[1])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn3").addEventListener("click" , btn3)
+
+  function btn3(){
+   event.preventDefault();
+   cartArr.push( productData[2])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn4").addEventListener("click" , btn4)
+
+  function btn4(){
+   event.preventDefault();
+   cartArr.push( productData[3])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn5").addEventListener("click" , btn5)
+
+  function btn5(){
+   event.preventDefault();
+   cartArr.push( productData[4])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn6").addEventListener("click" , btn6)
+
+  function btn6(){
+   event.preventDefault();
+   cartArr.push( productData[5])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn7").addEventListener("click" , btn7)
+
+  function btn7(){
+   event.preventDefault();
+   cartArr.push( productData[6])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn8").addEventListener("click" , btn8)
+
+  function btn8(){
+   event.preventDefault();
+   cartArr.push( productData[7])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn9").addEventListener("click" , btn9)
+
+  function btn9(){
+   event.preventDefault();
+   cartArr.push( productData[8])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn10").addEventListener("click" , btn10)
+
+  function btn10(){
+   event.preventDefault();
+   cartArr.push( productData[9])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn11").addEventListener("click" , btn11)
+
+  function btn11(){
+   event.preventDefault();
+   cartArr.push( productData[10])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn12").addEventListener("click" , btn12)
+
+  function btn12(){
+   event.preventDefault();
+   cartArr.push( productData[11])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn13").addEventListener("click" , btn13)
+
+  function btn13(){
+   event.preventDefault();
+   cartArr.push( productData[12])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn14").addEventListener("click" , btn14)
+
+  function btn14(){
+   event.preventDefault();
+   cartArr.push( productData[13])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  document.getElementById("btn15").addEventListener("click" , btn15)
+
+  function btn15(){
+   event.preventDefault();
+   cartArr.push( productData[14])
+   // console.log(cartArr)
+   localStorage.setItem("cart" , JSON.stringify(cartArr))
+  }
+  
+  // console.log(cartArr)
+    
+  
+ 
+
