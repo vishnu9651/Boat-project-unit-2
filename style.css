@@ -456,3 +456,40 @@ a:hover {
 .shpng a{
 color: #000;
 }
+/* boatblog */
+.article{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(1,1fr);
+  margin: auto;
+}
+h5{
+  color: white;
+}
+.sopimg{
+  width: 90%;
+  height: 60%;
+}
+
+hr{
+  color: red;
+  border: 1px solid red;
+}
+.fst{
+  background-color: #363636;
+}
+h4{
+  color: white;
+  font-weight: bold;
+}
+h4 p{
+  color: grey;
+}
+/* bothead */
+.hedsrow{
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  padding: 10px;
+  margin: auto;
+}
