@@ -156,7 +156,7 @@ var productData = [
   category: "wired headphones" ,
  },
  { 
-  Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/eb8e0fbd-c412-48b3-9c91-5b49ddf35800_360x.png?v=1625045744" ,
+  Image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_420x.png?v=1625046144" ,
   discount: " you save 70%"  ,
   rating: " 5 star " , 
   name: "boAt Rockerz 550",

@@ -84,9 +84,11 @@ body{
  }
   .heading_text {
     color: white;
-    font-size: 30px;
+  
     font-weight: lighter;
     text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
      
   }
   .checked {
@@ -193,14 +195,14 @@ color: red;
  }
  .trending_container{
    display: flex;
-  margin-left: 150px;
+  margin-left: 87px;
   margin-top: 20px;
    
  
  }
  .trending_container img{
-   height: 250px;
-   width: 300px;
+   height: 320px;
+   width: 360px;
  }
 
 /* footer */
