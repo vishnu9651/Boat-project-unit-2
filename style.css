@@ -1,6 +1,7 @@
 body {
   background-color: black;
 }
+ 
 .announcment {
   cursor: pointer;
   background-color: red;
@@ -12,6 +13,7 @@ body {
   color: white;
   text-align: center;
   padding: 2px;
+  cursor: pointer;
 }
 .underline {
   text-decoration: underline;
@@ -193,7 +195,9 @@ body {
    
  }
  
-   
+   .inner_item_container{
+    cursor: pointer;
+   }
   
   .text_box{
     border-radius: 0px 0px 10px 10px;
