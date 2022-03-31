@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:450px;
+            margin:auto;
+            box-sizing: border-box;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-top: 70px;
+        }
+        .heading{
+            font-size: 25px;
+            font-family: sans-serif;
+            line-height: 16px;
+            color:rgb(75, 74, 74);
+        }
+        .info{
+            font-family: sans-serif;
+            line-height: 20px;
+            font-size: 14px;
+        }
+        hr{
+            width:100%;
+            height: 0.1px;
+            border:none;
+            background-color:rgb(197, 195, 195);
+        }
+        hr+p{
+            color:slategray;
+            font-size: 20px;
+        }
+
+        #price {
+            width:100%;
+            height:50px;
+            border: 2px solid black;
+            border-radius: 8px;
+            padding:10px;
+            font-size: 18px;
+        }
+
+        input{
+            margin-top: 15px;
+            width:385px;
+            height:25px;
+            border: 2px solid black;
+            border-radius: 8px;
+            padding:10px;
+            font-size: 18px;
+        }
+
+        button{
+            margin-top:15px;
+            width:100%;
+            height:50px;
+            background-color:red;
+            color:white;
+            border:none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight:700;
+        }
+
+        button + p{
+            color: rgb(116, 113, 113);
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .msg{
+            color:seagreen;
+            background-color: rgb(211, 208, 208);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <p class="heading">EMAIL ME WHEN AVAILABLE</p>
+
+    <P class="info">Register your email address and we will notify you as soon as this product is back in stock.</P>
+
+    <hr>
+
+    <p class="heading">Gift Card</p>
+
+    <select id="price">
+        <option value="500">Rs 500.00</option>
+        <option value="1000">Rs 1,000.00</option>
+        <option value="2000">Rs 2,000.00</option>
+        <option value="5000">Rs 5,000.00</option>
+    </select>
+
+    <input type="text" placeholder="enter Email">
+
+    <button>Email me when available</button>
+    <p class="msg"></p>
+
+    <p>We'll notify you when this product is in stock. We don't share your address with anybody else.</p>
+</div>
+</body>
+</html>
+
+<script>
+    document.querySelector("button").addEventListener("click",function(){
+
+        if(document.querySelector("input").value == ""){
+            alert("enter email");
+        }else{
+        var msg = "Your notification has been registered." 
+        document.querySelector(".msg").innerText=msg;
+        document.querySelector(".msg").style.padding="10px";
+    }
+    })
+</script>
