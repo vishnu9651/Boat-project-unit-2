@@ -95,6 +95,12 @@ body{
        text-align: center;
        color: white;
    }
+   .rs{
+       font-size: 20px;
+       margin-left: 12%;
+       color:rgb(209, 71, 71);
+
+   }
    .prod{
        color: grey;
        text-align: center;
@@ -104,12 +110,12 @@ body{
        justify-content: space-evenly;
    }
    .pricing{
-       margin-top: 0%;
+       margin-top: -11%;
        font-size: 30px;
        color: rgb(209, 71, 71);
    }
    .strike{
-       margin-top: 0%;
+       margin-top: -11%;
        font-size: 30px;
        color: grey;
        text-decoration: line-through;
