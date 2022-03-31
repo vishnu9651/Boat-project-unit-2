@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Add to cart.css">
+</head>
+<body>
+    <div class="announcment">
+        <a href=""></a>
+        <div class="inner_announcment">
+            <b>
+                Cancel out noise with Airdopes 411 ANC. <span class="underline">Grab now</span>     
+            </b>
+        </div>
+     </div>
+     <!-- announcment part done here -->
+     
+     <div class="navbar">
+         <div>  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_137f5a28-b960-4963-b1fd-e91c60e436a9_200x.png?v=1640587883" alt=""></div>
+        
+         <div class="menu">
+            <div>Shop <span> <i class="fa-solid fa-angle-down"></i>
+            </span></div>
+            <div>Daily deals</div>
+            <div>Move of Champions</div>
+            <div>More <span><i class="fa-solid fa-angle-down"></i></span></div>
+           
+         </div>
+         <form action="" id="form">
+            <input type="search" id="srch" class="form-control" placeholder="Search" aria-label="Search" />
+         </form>
+         <!-- <div><input type="search" placeholder="Search"></div> -->
+         <div class="end_nav">
+              
+           <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt=""> </div>
+             <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/user_1.png?v=1606314823" alt=""></div> 
+           <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/cart.png?v=1606314839" alt=""></div>
+
+         </div>
+     </div>
+     <div id="inner1">
+         <p>Home/boAt Rockerz 235 V2</p>
+         <div id="box1">
+            <div>
+                <div class="mini1">
+                    <p>You save 66%</p>
+                </div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5324091f-9f39-463f-bf20-e603c796349c_540x.png?v=1625045742" alt="">
+            </div>
+            <div id="beside">
+                <h1>boAt Rockerz 235 V2</h1>
+                <p>BLUETOOTH EARPHONES</p>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <div id="box2">
+                    <!-- <div class="mini2">
+                        <div><h2>Rs.999.00</h2></div>
+                        <div><h4>Rs.2,990.00</h4></div>
+                    </div> -->
+                    <p>YOU SAVE 66%</p>
+                    <!-- <p>Inclusive if all taxes</p>
+                    <div id="box3">
+                        <div></div>
+                        <div></div>
+                     </div> -->
+                </div>
+            </div>
+         </div>
+     </div>
+     <button><a href="cart.html">Go to Cart</a></button>
+</body>
+</html>
+
+<script>
+    
+    var Boat = [
+        {
+           price: "Rs.999.00",
+           stkPrice: "Rs.2,990.00"
+        }
+    ]
+
+    var cartData = JSON.parse(localStorage.getItem("cart"))||[];
+    window.addEventListener("load",function () {
+      display(Boat);
+    });
+
+    function display(Boat){
+
+        document.querySelector("#box2").innerHTML = "";
+        Boat.map(function(el){      
+        var box = document.createElement("div")
+
+         var nm = document.createElement("p");
+         nm.textContent = "Inclusive of all taxes"
+         nm.style.color = "grey";
+        
+         var img = document.createElement("img");
+         img.src = el.pic;
+         
+         var nam = document.createElement("h4");
+         nam.textContent = el.name;
+         nam.style.color = "black"
+        
+         var amount = document.createElement("div");
+         amount.setAttribute("class","mrp")
+
+         var prc = document.createElement("h5");
+         prc.textContent = el.price
+         prc.setAttribute("class","pricing")
+
+         var stkprc = document.createElement("h6");
+         stkprc.textContent = el.stkPrice
+         stkprc.setAttribute("class","strike")
+
+         var btn = document.createElement("button")
+         btn.innerText = "ADD TO CART"
+         btn.setAttribute("class","item")
+         btn.addEventListener("click",function(){
+             addToCart(el)
+         })
+           
+         amount.append(prc,stkprc)
+         box.append(amount,nm,btn)
+         document.querySelector("#box2").append(box);
+    })
+    }
+   
+    function addToCart(el){
+        // console.log("cart")
+        cartData.push(el)
+        localStorage.setItem("cart",JSON.stringify(cartData))
+        alert("Item added to cart")
+    }
+    
+</script>
