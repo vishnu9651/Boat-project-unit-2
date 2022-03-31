@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/24c494a6b6.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="cartAdded.css">
+    <link rel="stylesheet" href="addedCart.css">
 </head>
 <body>
     <div class="announcment">
@@ -63,7 +63,8 @@
            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/48d16e65-e295-45ef-a59d-ee85f787001d_540x.png?v=1625044995",
            name: "boAt Rockerz 235 V2",
            type: "BLUETOOTH EARPHONES",
-           price: "Rs.999.00",
+           rupee: "Rs.",
+           price: "999.00",
            stkPrice: "Rs.2,990.00",
            off: "YOU SAVE 66%",
            text: "Inclusive of all taxes"
@@ -93,6 +94,10 @@
             nam2.textContent = el.type;
             nam2.setAttribute("class","prod")
             
+            var symb = document.createElement("h5")
+            symb.textContent = el.rupee;
+            symb.setAttribute("class","rs")
+
             var amount = document.createElement("div");
             amount.setAttribute("class","mrp")
 
@@ -120,7 +125,7 @@
              })
             
             amount.append(prc,stkprc)
-            box.append(img,nam1,nam2,amount,offer,small,btn)
+            box.append(img,nam1,nam2,symb,amount,offer,small,btn)
             document.querySelector("#inside").append(box);
     })
     };
