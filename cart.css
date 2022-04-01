@@ -1,0 +1,154 @@
+body{
+    font-family:sans-serif;
+}
+
+.announcement {
+    background-color: red;
+    height:25px;
+    border:1px solid red;
+}
+
+.inner-announcement {
+    margin-top: -12px;
+    text-align: center;
+    color: white;
+    height:100%;
+    
+}
+
+#box{
+    text-align: center;  
+}
+
+.imgbox{
+    background-color: whitesmoke;
+    padding:50px;
+}
+
+.bag{
+    height:200px;
+    width:auto;
+}
+
+.bagtext{
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.button{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn{
+    background-color: red;
+    font-family: sans-serif;
+    font-weight: 700;
+    color:white;
+    padding:15px 10px 15px 10px;
+    border:none;
+    border-radius: 30px;
+}
+
+.promocode{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.promo-section{
+    text-align: center;
+}
+
+input{
+    height:30px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.promobtn {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 15px;
+    padding:5px 15px 5px 15px;
+    font-size: 16px;
+    font-weight: bolder;
+    color:black;
+    margin-left: 10px;
+}
+
+.productbox{
+    width:60%;
+    height:150px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin:auto;
+    display:flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.details{
+    margin-left: 150px;
+}
+
+.pic{
+    width:150px;
+    height:auto;
+}
+
+.item{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.prod{
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.mrp{
+    display:flex;
+    margin-top: -10px;
+}
+
+.pricing{
+    font-size: 16px;
+}
+
+.strike{
+    margin-top: 26px;
+    margin-left: 20px;
+}
+
+.txt{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+    background-color: red;
+    color:white;
+    border-radius: 15px;
+    padding:5px;
+    height:16px;
+}
+
+.pbox{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.payment{
+    background-color: red;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    font-size: 18px;
+    color:white;
+    border:1px solid red;
+}
+
+.paybox{
+    margin-top: 30px;
+    text-align: center;
+}
