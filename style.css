@@ -373,6 +373,7 @@ a:hover {
   left: 0;
   margin: auto;
   text-align: center;
+  padding: 15px;
 }
 /* parascroll */
 .one{
@@ -384,7 +385,16 @@ a:hover {
   width: 30px;
   height: 30px;
 }
-
+.newlaunch{
+   margin-top: -5%;
+   width: 120%;
+}
+#header{
+  margin-top: 5%;
+  font-size: 50px;
+  margin-left: 30%;
+  color: white
+}
 /* boatblog */
 .article{
   display: grid;

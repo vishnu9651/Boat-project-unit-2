@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display:flex;
+            
+            height:700px;
+            width: 100%;
+            gap:0px;
+        }
+        #address{
+            background-color: lightcyan;
+            
+            height:700px;
+            width:900px
+        }
+        #payment{
+            
+            height:600px;
+            width:800px
+        }
+        img{
+            height:20px;
+        }
+        #already{
+            display: flex;
+            
+        }
+        button{
+            
+            height: 30px;
+            color:white;
+            background-color: red;
+            border-radius: 10px;
+            margin-left:50px
+        }
+        #loginlink{
+            border:1px solid red;
+            background-color: red;
+            color:white;
+            border-radius: 18px;
+            width: 150px;
+            height:20px;
+            padding: 10px;
+            font-family: inherit;
+            margin-left: 200px;
+            
+
+        }
+        input{
+            height: 25px;
+            margin:10px;
+            border-top: 1px;
+            border-left: 1px;
+            border-right: 1px;
+            border-bottom: 1px solid lightgrey;
+        }
+        #boat{
+            height:60px;
+            margin: 10px;
+        }
+        #check{
+            margin-top: -180px;
+        
+            
+        }
+        #bank{
+            height:30px
+
+
+        }
+        
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #2ecc71 60%, #27ae60 40.1%);
+}
+
+
+#payment{
+  width: 50%;
+  height:100%;
+  padding:12px;
+  font-size: 17px;
+  background: lightgreen;
+  color:#fff;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+.submit-btn:hover{
+  background: #2ecc71;
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="address">
+            <a href="https://www.boat-lifestyle.com/" > <img id="boat" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_2.png?95566" alt=""/></a>
+            <div id="already">
+                <div id="profile">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/user_f6f5a882-bddc-4d06-af42-4f3470f9a4d7.png?v=1633594125" alt=""/>
+                Already have an account?
+                </div>
+                <div id="login">
+                    <a href = "createacc.html" id ="loginlink"> LOGIN/SIGNUP</a>
+                </div>
+            </div>
+            <form>
+                <h2>DELIVERY ADDRESS</h2>
+                
+                <input type="text" id="email" placeholder="Email"/>
+
+                <p><input type="checkbox" id="check">Keep me update on my order status over emailand whatsapp
+                <div></div>
+                <input type="text" id="country" placeholder="Country/region"><select><option>india</option> <option>USA</option>
+                    <option>China</option><option>Russia</option><option>ukrain</option></select> 
+              <div> <input type="text" placeholder="First name"><input type="text" placeholder="Last name" ></div> 
+              <div><input type="text" placeholder="Address"></div>
+             <input type ="text" placeholder="Apartment,suite,etc(optiona)"/><input type="text" placeholder="City"/>
+             <div><input type="text" placeholder="State"><input type="number" placeholder="PIN code"></div>
+             <input type="number" placeholder="Phone">
+             <div><input type="checkbox">Save this information for next time</div>        
+             </form>
+             <div>  </div>
+        </div>
+<div id="payment">
+    <h2>Payment Details</h2>
+    
+            <div class="col">
+
+                
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img id="bank"  src="images/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="enter your name">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="january">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="123">
+                    </div>
+                    <input type="submit" value="proceed to checkout" class="submit-btn">
+                </div>
+
+            </div>
+    
+        </div>
+
+       
+
+    </form>
+
+</div>    
+    
+</body>
+</html>
+
+</div>
+    </div>
+</body>
+</html>
