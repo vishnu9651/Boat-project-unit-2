@@ -326,11 +326,7 @@ console.log(len)
 document.getElementById("cartItems").innerText = len;
 
 
-document.querySelector("#xtend").addEventListener("click",  mya)
-function mya(){
-  window.location.href="watch.html"
 
-}
 
 document.querySelector("#cham").addEventListener("click",  mycham)
 function mycham(){
@@ -356,5 +352,17 @@ function mycham(){
 document.querySelector("#myCart").addEventListener("click",  mycham)
 function mycham(){
   window.location.href="cart.html"
+
+}
+
+document.querySelector(".top_slider").addEventListener("click",  mycham)
+function mycham(){
+  window.location.href="cable.html"
+
+}
+
+document.querySelector("#xtend").addEventListener("click",  mya)
+function mya(){
+  window.location.href="watch.html"
 
 }
