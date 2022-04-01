@@ -35,7 +35,7 @@ var productData = [
  
  { 
   image: " https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_541e4150-6924-467d-b193-1793daa2e283_360x.png?v=1648119560" ,
-  off: "  NEW-ARRIVAL"  ,
+  off:"you save 56%" ,
   rating: " 5 star " , 
   name: "boAt  Deuce 500",
   price: 499.00,
@@ -46,7 +46,7 @@ var productData = [
  
  { 
   image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_9230f72d-9f86-4aec-9ae2-a7d87d332877_360x.png?v=1647426798" ,
-  off: "  NEW-ARRIVAL"  ,
+  off: " you save 64%" ,
   rating: " 5 star " , 
   name: " Airdopes 411 ANC",
   price:  2299.00,
@@ -328,41 +328,127 @@ document.getElementById("cartItems").innerText = len;
 
 
 
-document.querySelector("#cham").addEventListener("click",  mycham)
-function mycham(){
+document.querySelector("#cham").addEventListener("click",  mycham1)
+function mycham1(){
   window.location.href="champion.html"
 
 }
-document.querySelector("#boat_logo").addEventListener("click",  mycham)
-function mycham(){
+document.querySelector("#boat_logo").addEventListener("click",  mycham2)
+function mycham2(){
   window.location.reload();
 
 }
 
-document.querySelector("#card_gift").addEventListener("click",  mycham)
-function mycham(){
+document.querySelector("#card_gift").addEventListener("click",  mycham3)
+function mycham3(){
   window.location.href="giftCard.html"
 
 }
-document.querySelector("#myAccount").addEventListener("click",  mycham)
-function mycham(){
+document.querySelector("#myAccount").addEventListener("click",  mycham4)
+function mycham4(){
   window.location.href=" "
 
 }
-document.querySelector("#myCart").addEventListener("click",  mycham)
-function mycham(){
+document.querySelector("#myCart").addEventListener("click",  mycham5)
+function mycham5(){
   window.location.href="cart.html"
 
 }
 
-document.querySelector(".top_slider").addEventListener("click",  mycham)
-function mycham(){
+document.querySelector(".top_slider").addEventListener("click",  mycham6)
+function mycham6(){
   window.location.href="cable.html"
 
 }
+document.querySelector("#p1").addEventListener("click",  mya1)
+function mya1(){
+  window.location.href="Airdopes.html"
 
-document.querySelector("#xtend").addEventListener("click",  mya)
-function mya(){
+}
+document.querySelector("#p2").addEventListener("click",  mya2)
+function mya2(){
+  window.location.href="earphone.html"
+
+}
+
+document.querySelector("#p3").addEventListener("click",  mya3)
+function mya3(){
   window.location.href="watch.html"
+
+}
+
+document.querySelector("#p4").addEventListener("click",  mya4)
+function mya4(){
+  window.location.href="earphone.html"
+
+}
+document.querySelector("#p5").addEventListener("click",  mya5)
+function mya5(){
+  window.location.href="Airdopes.html"
+
+}
+document.querySelector("#p6").addEventListener("click",  mya6)
+function mya6(){
+  window.location.href="headphone.html"
+
+}
+document.querySelector("#p7").addEventListener("click",  mya7)
+function mya7(){
+  window.location.href="earbuds.html"
+
+}
+document.querySelector("#p8").addEventListener("click",  mya8)
+function mya8(){
+  window.location.href="earbuds.html"
+
+}
+document.querySelector("#p9").addEventListener("click",  mya9)
+function mya9(){
+  window.location.href="Airdopes.html"
+
+}
+document.querySelector("#p10").addEventListener("click",  mya10)
+function mya10(){
+  window.location.href="watch.html"
+
+}
+document.querySelector("#p11").addEventListener("click",  mya11)
+function mya11(){
+  window.location.href="watch.html"
+
+}
+document.querySelector("#p12").addEventListener("click",  mya12)
+function mya12(){
+  window.location.href="watch.html"
+
+}
+document.querySelector("#p13").addEventListener("click",  mya13)
+function mya13(){
+  window.location.href="headphone.html"
+
+}
+document.querySelector("#p14").addEventListener("click",  mya14)
+function mya14(){
+  window.location.href="headphone.html"
+
+}
+document.querySelector("#p15").addEventListener("click",  mya15)
+function mya15(){
+  window.location.href="headphone.html"
+
+}
+document.querySelector("#p16").addEventListener("click",  mya16)
+function mya16(){
+  window.location.href="earphone.html"
+
+}
+document.querySelector("#p17").addEventListener("click",  mya17)
+function mya17(){
+  window.location.href="earphone.html"
+
+}
+document.querySelector("#p18").addEventListener("click",  mya18)
+function mya18(){
+  window.location.href="earphone.html"
 
 }
