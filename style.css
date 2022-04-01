@@ -44,7 +44,7 @@ body {
 .menu  :hover{
   cursor: pointer;
   color: #e03f3f;
-  font-size: 20px;
+  font-size: 18px;
 }
 .font_nav {
   color: white;
@@ -129,8 +129,18 @@ body {
     margin: auto;
   
  }
- 
- 
+ #boat_logo{
+   cursor: pointer;
+ }
+ #card_gift{
+   cursor: pointer;
+ }
+#myAccount{
+  cursor: pointer;
+}
+ #myCart{
+   cursor: pointer;
+ }
    .inner_item_container{
     cursor: pointer;
    }
@@ -139,6 +149,7 @@ body {
     border-radius: 0px 0px 10px 10px;
    background-color: white;
   }
+  
   .text_box>div{
     margin-left: 10px;
   }
@@ -155,6 +166,7 @@ body {
      display: inline;
     background-color: white;
     color: red;
+    text-transform: uppercase;
     
    
   }
@@ -209,7 +221,7 @@ body {
 color: red;
   font-size: 6px;
   }
- 
+  
  .btn_add_cart{
    color: #f1f1f1;
    background-color: black;

@@ -331,3 +331,30 @@ function mya(){
   window.location.href="watch.html"
 
 }
+
+document.querySelector("#cham").addEventListener("click",  mycham)
+function mycham(){
+  window.location.href="champion.html"
+
+}
+document.querySelector("#boat_logo").addEventListener("click",  mycham)
+function mycham(){
+  window.location.reload();
+
+}
+
+document.querySelector("#card_gift").addEventListener("click",  mycham)
+function mycham(){
+  window.location.href="giftCard.html"
+
+}
+document.querySelector("#myAccount").addEventListener("click",  mycham)
+function mycham(){
+  window.location.href=" "
+
+}
+document.querySelector("#myCart").addEventListener("click",  mycham)
+function mycham(){
+  window.location.href="cart.html"
+
+}
