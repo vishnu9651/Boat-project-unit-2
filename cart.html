@@ -34,14 +34,22 @@
     <h3 class="promocode"></h3>
 
     <div class="promo-section"></div>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> eccf56223923f86a1a920bfd0b656eec7fd232c9
     <div class="pbox">
         <p class="total"></p>
         <p class="discount"></p>
         <p class="shipping"></p>
         <p class="pay"></p>
     </div>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> eccf56223923f86a1a920bfd0b656eec7fd232c9
     <div class="paybox"></div>
 
 </body>
@@ -51,35 +59,44 @@
 <script>
     var cartdata = JSON.parse(localStorage.getItem("cart"));
 
+<<<<<<< HEAD
     var imgbox = document.createElement("div")
     imgbox.setAttribute("class", "imgbox")
+=======
+    var imgbox = document.createElement("div");
+    imgbox.setAttribute("class", "imgbox");
+>>>>>>> eccf56223923f86a1a920bfd0b656eec7fd232c9
 
     var img = document.createElement("img");
-    img.setAttribute("class", "bag")
+    img.setAttribute("class", "bag");
     img.src = "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/bag_925d9ab5-b7d8-4b86-bfc5-2cb9b4df471e.png?v=1633452372";
     imgbox.append(img);
 
     var h3 = document.createElement("h3");
-    h3.setAttribute("class", "bagtext")
+    h3.setAttribute("class", "bagtext");
     h3.innerText = "Your shopping bag is Empty.";
 
     var btn = document.createElement("button");
-    btn.setAttribute("class", "btn")
+    btn.setAttribute("class", "btn");
     btn.innerText = "GO TO OUR COLLECTION";
 
     btn.addEventListener("click", function () {
         window.location.href = "dailydeals.html";
-    })
+    });
 
     if (cartdata == null) {
+<<<<<<< HEAD
         document.querySelector("#box").append(imgbox, h3, btn)
         document.querySelector(".button").append(btn)
+=======
+        document.querySelector("#box").append(imgbox, h3, btn);
+        document.querySelector(".button").append(btn);
+>>>>>>> eccf56223923f86a1a920bfd0b656eec7fd232c9
     }
-
-
     else {
 
         cartdata.map(function (el) {
+<<<<<<< HEAD
             var box = document.createElement("div")
             box.setAttribute("class","productbox")
 
@@ -121,6 +138,51 @@
 
             document.querySelector(".products").append(box);
         })
+=======
+            var box = document.createElement("div");
+            box.setAttribute("class", "productbox");
+
+            var details = document.createElement("div");
+            details.setAttribute("class", "details");
+
+            var img = document.createElement("img");
+            img.src = el.image;
+            img.setAttribute("class", "pic");
+
+            var nam1 = document.createElement("h2");
+            nam1.textContent = el.name;
+            nam1.setAttribute("class", "item")
+
+            var nam2 = document.createElement("h4");
+            nam2.textContent = el.type;
+            nam2.setAttribute("class", "prod");
+
+            var amount = document.createElement("div");
+            amount.setAttribute("class", "mrp");
+
+            var prc = document.createElement("h5");
+            prc.textContent = `Rs ${el.price}`;
+            prc.setAttribute("class", "pricing");
+
+            var stkprc = document.createElement("s");
+            stkprc.textContent = el.stkPrice;
+            stkprc.setAttribute("class", "strike");
+
+            var offer = document.createElement("p");
+            offer.textContent = el.off;
+            offer.setAttribute("class", "txt");
+
+            amount.append(prc, stkprc, offer);
+
+            details.append(nam1, nam2, amount);
+
+            box.append(img, details);
+
+            document.querySelector(".products").append(box);
+        });
+
+        //*********************************************************************
+>>>>>>> eccf56223923f86a1a920bfd0b656eec7fd232c9
 
         //*********************************************************************
 
@@ -150,6 +212,7 @@
             document.querySelector(".pay").innerText = `Pay:Rs ${total + 40}`;
         }
 
+<<<<<<< HEAD
         
 
         document.querySelector(".total").innerText = `Total:${total}`;
@@ -197,5 +260,49 @@
         })
     
     }
+=======
 
+
+        document.querySelector(".total").innerText = `Total:${total}`;
+>>>>>>> eccf56223923f86a1a920bfd0b656eec7fd232c9
+
+        document.querySelector(".promo-section > button").addEventListener("click", applyfn)
+
+        function applyfn() {
+            var discount;
+
+            if (document.querySelector(".promo-section > input").value == "masai30") {
+                discount = (total * 30) / 100;
+
+                document.querySelector(".discount").innerText = `Discount:         Rs ${discount}`;
+
+                var total1 = cartdata.reduce(function (sum, el) {
+                    return sum + Number(el.price);
+                }, 0)
+
+
+                var out = total1 - discount;
+
+                if (total1 >= 3000) {
+                    document.querySelector(".shipping").innerText = `Shipping:      ${"FREE"}`;
+                    document.querySelector(".pay").innerText = `Pay:        Rs ${out}`;
+                } else {
+                    document.querySelector(".shipping").innerText = `Shipping:      Rs ${40}`;
+                    document.querySelector(".pay").innerText = `Pay:        Rs ${out + 40}`;
+                }
+
+            }
+            else {
+                alert("wrong Promo Code");
+            }
+
+        }
+
+        var paybtn = document.createElement("btn");
+        paybtn.setAttribute("class", "payment");
+        paybtn.innerText = "Proceed To Pay";
+
+        document.querySelector(".paybox").append(paybtn);
+
+    };
 </script>
