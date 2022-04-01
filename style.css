@@ -93,9 +93,7 @@ body {
   }
 }
 /* top scroling */
-.top_scroling {
-  margin-top: 420px;
-}
+
 .heading_text {
   color: white;
   font-size: 30px;
@@ -446,6 +444,7 @@ a:hover {
   left: 0;
   margin: auto;
   text-align: center;
+  padding: 15px;
 }
 /* parascroll */
 .one{
