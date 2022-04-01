@@ -324,3 +324,10 @@ console.log(addCartArr)
 var len = addCartArr.length
 console.log(len)
 document.getElementById("cartItems").innerText = len;
+
+
+document.querySelector("#xtend").addEventListener("click",  mya)
+function mya(){
+  window.location.href="watch.html"
+
+}
