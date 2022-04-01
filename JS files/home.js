@@ -184,7 +184,7 @@ var productData = [
   function btn1(){
    event.preventDefault();
    cartArr.push( productData[0])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -193,7 +193,7 @@ var productData = [
   function btn2(){
    event.preventDefault();
    cartArr.push( productData[1])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -202,7 +202,7 @@ var productData = [
   function btn3(){
    event.preventDefault();
    cartArr.push( productData[2])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -211,7 +211,7 @@ var productData = [
   function btn4(){
    event.preventDefault();
    cartArr.push( productData[3])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -220,7 +220,7 @@ var productData = [
   function btn5(){
    event.preventDefault();
    cartArr.push( productData[4])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -229,7 +229,7 @@ var productData = [
   function btn6(){
    event.preventDefault();
    cartArr.push( productData[5])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -238,7 +238,7 @@ var productData = [
   function btn7(){
    event.preventDefault();
    cartArr.push( productData[6])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -247,7 +247,7 @@ var productData = [
   function btn8(){
    event.preventDefault();
    cartArr.push( productData[7])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -256,7 +256,7 @@ var productData = [
   function btn9(){
    event.preventDefault();
    cartArr.push( productData[8])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -265,7 +265,7 @@ var productData = [
   function btn10(){
    event.preventDefault();
    cartArr.push( productData[9])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -274,7 +274,7 @@ var productData = [
   function btn11(){
    event.preventDefault();
    cartArr.push( productData[10])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -283,7 +283,7 @@ var productData = [
   function btn12(){
    event.preventDefault();
    cartArr.push( productData[11])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -292,7 +292,7 @@ var productData = [
   function btn13(){
    event.preventDefault();
    cartArr.push( productData[12])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -301,7 +301,7 @@ var productData = [
   function btn14(){
    event.preventDefault();
    cartArr.push( productData[13])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
@@ -310,7 +310,7 @@ var productData = [
   function btn15(){
    event.preventDefault();
    cartArr.push( productData[14])
-   // console.log(cartArr)
+   alert("Item added to cart")
    localStorage.setItem("cart" , JSON.stringify(cartArr))
    // window.location.href="HomePage.html"
   }
