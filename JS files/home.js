@@ -67,7 +67,7 @@ var productData = [
  
  
  { 
-  image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/mainblack_360x.png?v=1640237575" ,
+  image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/mainblack_360x.png?v=1640237575",
   off: " you save 62%"  ,
   rating: " 5 star " , 
   name: "boAt watch Iris",
@@ -87,7 +87,7 @@ var productData = [
   btn : "btn8"
  },
  { 
-  image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Black_2_360x.png?v=1639486284" ,
+  image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Black_2_360x.png?v=1639486284",
   off: " you save 61%"  ,
   rating: " 5 star " , 
   name: "boAt watch Mystiq",
@@ -178,6 +178,7 @@ var productData = [
  ]
  
   var cartArr = JSON.parse(localStorage.getItem("cart")) || []
+  
   document.getElementById("btn1").addEventListener("click" , btn1)
 
   function btn1(){
@@ -185,6 +186,7 @@ var productData = [
    cartArr.push( productData[0])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn2").addEventListener("click" , btn2)
 
@@ -193,6 +195,7 @@ var productData = [
    cartArr.push( productData[1])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn3").addEventListener("click" , btn3)
 
@@ -201,6 +204,7 @@ var productData = [
    cartArr.push( productData[2])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn4").addEventListener("click" , btn4)
 
@@ -209,6 +213,7 @@ var productData = [
    cartArr.push( productData[3])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn5").addEventListener("click" , btn5)
 
@@ -217,6 +222,7 @@ var productData = [
    cartArr.push( productData[4])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn6").addEventListener("click" , btn6)
 
@@ -225,6 +231,7 @@ var productData = [
    cartArr.push( productData[5])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn7").addEventListener("click" , btn7)
 
@@ -233,6 +240,7 @@ var productData = [
    cartArr.push( productData[6])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn8").addEventListener("click" , btn8)
 
@@ -241,6 +249,7 @@ var productData = [
    cartArr.push( productData[7])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn9").addEventListener("click" , btn9)
 
@@ -249,6 +258,7 @@ var productData = [
    cartArr.push( productData[8])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn10").addEventListener("click" , btn10)
 
@@ -257,6 +267,7 @@ var productData = [
    cartArr.push( productData[9])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn11").addEventListener("click" , btn11)
 
@@ -265,6 +276,7 @@ var productData = [
    cartArr.push( productData[10])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn12").addEventListener("click" , btn12)
 
@@ -273,6 +285,7 @@ var productData = [
    cartArr.push( productData[11])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn13").addEventListener("click" , btn13)
 
@@ -281,6 +294,7 @@ var productData = [
    cartArr.push( productData[12])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn14").addEventListener("click" , btn14)
 
@@ -289,6 +303,7 @@ var productData = [
    cartArr.push( productData[13])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   document.getElementById("btn15").addEventListener("click" , btn15)
 
@@ -297,10 +312,15 @@ var productData = [
    cartArr.push( productData[14])
    // console.log(cartArr)
    localStorage.setItem("cart" , JSON.stringify(cartArr))
+   window.location.reload()
   }
   
   // console.log(cartArr)
     
   
- 
+var addCartArr = JSON.parse(localStorage.getItem("cart"))
 
+console.log(addCartArr)
+var len = addCartArr.length
+console.log(len)
+document.getElementById("cartItems").innerText = len;

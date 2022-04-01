@@ -51,6 +51,17 @@ body {
   height: 19px;
   width: 22px;
 }
+#cartItems{
+  color: white;
+  background-color: red;
+ font-size: 15px;
+ padding: 5px;
+  border-radius: 50%;
+  display: inline;
+  font-weight: bold;
+  
+ 
+}
 
 #form1 {
   border-radius: 20px;
