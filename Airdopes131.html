@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/24c494a6b6.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="earbuds.css">
+    <link rel="stylesheet" href="Airdopes131.css">
 </head>
 <body>
     <div class="announcment">
@@ -46,9 +46,9 @@
          </div>
      </div>
      <div id="inner1">
-         <p>Home/BOAT Airdopes 441 Pro - Bluetooth Wireless Earbuds</p>
+         <p>Home/boAt Airdopes 131 - Wireless Earbuds</p>
          <div id="save">
-             <div>YOU SAVE 50%</div>
+             <div>YOU SAVE 58%</div>
          </div>
          <div id="inside"></div>
      </div>
@@ -258,13 +258,13 @@
     
     var Boat = [
         {
-           image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/6101baeb-5d36-465c-ad23-80cdb133d8f5_540x.png?v=1625045659",
-           name: "BOAT Airdopes 441 Pro - Bluetooth Wireless Earbuds",
+           image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/viper-green_540x.png?v=1642405569",
+           name: "boAt Airdopes 131 - Wireless Earbuds",
            type: "WIRELESS EARBUDS",
            rupee: "Rs.",
-           price: "2999.00",
-           stkPrice: "Rs.5,990.00",
-           off: "YOU SAVE 50%",
+           price: "1249.00",
+           stkPrice: "Rs.2,990.00",
+           off: "YOU SAVE 58%",
            text: "Inclusive of all taxes"
         },
     ]
@@ -284,7 +284,7 @@
             img.src = el.image;
             img.setAttribute("class","pic")
             
-            var nam1 = document.createElement("h2");
+            var nam1 = document.createElement("h3");
             nam1.textContent = el.name;
             nam1.setAttribute("class","item")
 
@@ -326,7 +326,7 @@
              btn2.innerText = "BUY IT NOW"
              btn2.setAttribute("class","bag2")
              btn2.addEventListener("click",function(){
-                 addToCart(el)
+                 addToCart2(el)
              })
             
             amount.append(prc,stkprc)
@@ -340,6 +340,13 @@
         cartData.push(el)
         localStorage.setItem("cart",JSON.stringify(cartData))
         alert("Item added to cart") 
+        window.location.href = "cart.html";
+    }
+
+    function addToCart2(el){
+        console.log("cart")
+        cartData.push(el)
+        localStorage.setItem("cart",JSON.stringify(cartData))
         window.location.href = "cart.html";
     }
     

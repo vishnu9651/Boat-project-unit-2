@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart2</title>
+    <title>Cart3</title>
     <script
       src="https://kit.fontawesome.com/24c494a6b6.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="watch.css">
+    <link rel="stylesheet" href="earphone103.css">
 </head>
 <body>
     <div class="announcment">
@@ -46,9 +46,9 @@
          </div>
      </div>
      <div id="inner1">
-         <p>Home/boAt Watch Xtend‌</p>
+         <p>Home/boAt BassHeads 103</p>
          <div id="save">
-             <div>YOU SAVE 56%</div>
+             <div>YOU SAVE 70%</div>
          </div>
          <div id="inside"></div>
      </div>
@@ -258,13 +258,13 @@
     
     var Boat = [
         {
-           image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_529ecf13-c993-4fe7-a2d6-9357f1a47db4_540x.png?v=1645164257",
-           name: "boAt Watch Xtend‌",
-           type: "SMART WATCHES",
+           image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_540x.png?v=1574927262",
+           name: "boAt BassHeads 103",
+           type: "WIRED EARPHONES",
            rupee: "Rs.",
-           price: "3499.00",
-           stkPrice: "Rs.7,990.00",
-           off: "YOU SAVE 56%",
+           price: "379.00",
+           stkPrice: "Rs.1,290.00",
+           off: "YOU SAVE 70%",
            text: "Inclusive of all taxes"
         },
     ]
@@ -284,7 +284,7 @@
             img.src = el.image;
             img.setAttribute("class","pic")
             
-            var nam1 = document.createElement("h2");
+            var nam1 = document.createElement("h1");
             nam1.textContent = el.name;
             nam1.setAttribute("class","item")
 
@@ -326,7 +326,7 @@
              btn2.innerText = "BUY IT NOW"
              btn2.setAttribute("class","bag2")
              btn2.addEventListener("click",function(){
-                 addToCart(el)
+                 addToCart2(el)
              })
             
             amount.append(prc,stkprc)
@@ -340,6 +340,13 @@
         cartData.push(el)
         localStorage.setItem("cart",JSON.stringify(cartData))
         alert("Item added to cart") 
+        window.location.href = "cart.html";
+    }
+
+    function addToCart2(el){
+        console.log("cart")
+        cartData.push(el)
+        localStorage.setItem("cart",JSON.stringify(cartData))
         window.location.href = "cart.html";
     }
     

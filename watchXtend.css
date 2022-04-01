@@ -62,8 +62,9 @@ body{
 
    #inner1{
        margin: auto;
-       height: 1020px;
+       height: 790px;
        width: 70%;
+       border-radius: 15px; 
        background-color: #212121;
    }
    #inner1>p{
@@ -76,7 +77,9 @@ body{
        height: 30px;
        width: 15%;
        margin-left: 5%;
-       font-size: 20px;
+       font-size: 18px;
+       font-weight: bold;
+       border-radius: 10px;
        padding: 10px;
        color: white;
        background-color: red;
@@ -88,8 +91,9 @@ body{
        width: 60%;
    }
    .pic{
+       height: 300px;
        margin-top: -5%;
-       margin-left: 5%;
+       margin-left: 22%;
    }
    .item{
        text-align: center;
