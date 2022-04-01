@@ -326,7 +326,7 @@
              btn2.innerText = "BUY IT NOW"
              btn2.setAttribute("class","bag2")
              btn2.addEventListener("click",function(){
-                 addToCart(el)
+                 addToCart2(el)
              })
             
             amount.append(prc,stkprc)
@@ -343,4 +343,10 @@
         window.location.href = "cart.html";
     }
     
+    function addToCart2(el){
+        console.log("cart")
+        cartData.push(el)
+        localStorage.setItem("cart",JSON.stringify(cartData))
+        window.location.href = "cart.html";
+    }
 </script> 
