@@ -42,7 +42,7 @@
           <div class="menu">
               <div title="Shop">Shop <span> <i class="fa-solid fa-angle-down"></i>
               </span></div>
-              <div title="Daily deals">Daily deals</div>
+              <div id="dd" title="Daily deals">Daily deals</div>
               <div id="cham"  title="Move of Champions" >  Move of Champions</a></div>
               <div title="More">More <span><i class="fa-solid fa-angle-down"></i></span> </div>
       
@@ -751,4 +751,48 @@
 
 </html>
 
-<script src="/Boat-project-unit-2/JS files/home.js"></script>
+ 
+<script>
+ 
+
+document.querySelector("#cham").addEventListener("click",  mycham1)
+function mycham1(){
+  window.location.href="champion.html"
+
+}
+document.querySelector("#boat_logo").addEventListener("click",  mycham2)
+function mycham2(){
+   window.location.href="HomePage.html"
+
+}
+
+document.querySelector("#card_gift").addEventListener("click",  mycham3)
+function mycham3(){
+  window.location.href="giftCard.html"
+
+}
+document.querySelector("#myAccount").addEventListener("click",  mycham4)
+function mycham4(){
+  window.location.href=" "
+
+}
+document.querySelector("#myCart").addEventListener("click",  mycham5)
+function mycham5(){
+  window.location.href="cart.html"
+
+}
+ 
+var addCartArr = JSON.parse(localStorage.getItem("cart"))
+
+console.log(addCartArr)
+var len = addCartArr.length
+console.log(len)
+document.getElementById("cartItems").innerText = len;
+
+document.querySelector("#dd").addEventListener("click",  mya18)
+function mya18(){
+  window.location.reload();
+
+}
+
+</script>

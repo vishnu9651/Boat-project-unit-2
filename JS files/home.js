@@ -360,6 +360,7 @@ function mycham6(){
   window.location.href="cable.html"
 
 }
+
 document.querySelector("#p1").addEventListener("click",  mya1)
 function mya1(){
   window.location.href="Airdopes.html"
