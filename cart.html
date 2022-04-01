@@ -68,7 +68,7 @@
     btn.innerText = "GO TO OUR COLLECTION";
 
     btn.addEventListener("click", function () {
-        window.location.href = "dailydeals.html";
+        window.location.href = "HomePage.html";
     });
 
     if (cartdata == null) {
@@ -77,7 +77,7 @@
     }
     else {
 
-        cartdata.map(function (el) {
+        cartdata.map(function (el, index) {
             var box = document.createElement("div")
             box.setAttribute("class","productbox")
 
@@ -111,14 +111,27 @@
             offer.textContent = el.off
             offer.setAttribute("class","txt")
 
+            var remove = document.createElement("button");
+            remove.innerText="Remove Item";
+            remove.setAttribute("class","remove");
+            remove.addEventListener("click",function(){
+                removeitem(el, index)
+            });
+
             amount.append(prc, stkprc, offer)
 
-            details.append(nam1, nam2, amount)
+            details.append(nam1, nam2, amount,remove)
 
             box.append(img, details)
 
             document.querySelector(".products").append(box);
         })
+
+        function removeitem(el,index){
+            cartdata.splice(index,1);
+            localStorage.setItem("cart",JSON.stringify(cartdata));
+            window.location.reload();
+        }
 
         //*********************************************************************
 
