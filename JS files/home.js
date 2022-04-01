@@ -452,3 +452,9 @@ function mya18(){
   window.location.href="earphone.html"
 
 }
+
+document.querySelector("#dd").addEventListener("click",  mya18)
+function mya18(){
+  window.location.href="dailyDeals.html"
+
+}
