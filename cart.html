@@ -71,7 +71,7 @@
         window.location.href = "HomePage.html";
     });
 
-    if (cartdata == null) {
+    if ((cartdata == null) || (cartdata.length <= 0)) {
         document.querySelector("#box").append(imgbox, h3, btn)
         document.querySelector(".button").append(btn)
     }
