@@ -62,9 +62,9 @@ body{
 
    #inner1{
        margin: auto;
-       height: 790px;
+       height: 780px;
        width: 70%;
-       border-radius: 15px; 
+       border-radius: 15px;
        background-color: #212121;
    }
    #inner1>p{
@@ -93,9 +93,10 @@ body{
    .pic{
        height: 300px;
        margin-top: -5%;
-       margin-left: 22%;
+       margin-left: 25%;
    }
    .item{
+       font-size: 35px;
        text-align: center;
        color: white;
    }
@@ -126,7 +127,8 @@ body{
    }
    .txt{
        text-align: center;
-       margin-top: 0%;
+       margin-top: -5%;
+       font-size: bold;
        color: white;
        font-size: 20px;
    }

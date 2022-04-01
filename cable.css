@@ -62,7 +62,7 @@ body{
 
  #inner1{
      margin: auto;
-     height: 770px;
+     height: 760px;
      width: 70%;
      border-radius: 15px;
      background-color: #212121;
@@ -94,7 +94,7 @@ body{
      height: 300px;
      width: 60%;
      margin-top: -10%;
-     margin-left: 25%;
+     margin-left: 19%;
  }
  .item{
      font-size: 35px;
