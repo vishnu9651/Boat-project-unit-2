@@ -69,12 +69,45 @@ body {
   
  
 }
+ /* a  {
+text-decoration: none;
+}
 
-#form1 {
+.searchText{
+  border-radius: 5rem;
+  width: 20rem;
+  border: none;
+  outline: none;
+   transition: all 0.2s linear;
+}
+.searchText:focus{
+  outline: none;
+}
+.searchBtn{
+  width: 5rem;
+  height: 5rem;
+  color: white;
+} */
+.searchBox{
+  display: flex;
+ 
+}
+.searchText {
+ 
   border-radius: 20px;
   padding: 5px;
   font-size: 16px;
+  border: none;
+  outline: none;
+  /* box-shadow: 0rem 2rem 2rem -1.5rem rgba(0,0 ,0, 0.5); */
 }
+#searchBtn{
+  cursor: pointer;
+  margin-left: 2px;
+  font-size: 22px;
+  
+}
+ 
 /* header section */
 
 .top_slider {
