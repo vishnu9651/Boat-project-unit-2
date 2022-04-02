@@ -48,13 +48,16 @@
       
    </div>
 
-<!----Search-->
- 
-    <div class="form-outline">
-        <input type="search" id="form1" class="form-control" placeholder="Search" aria-label="Search" />
-    </div>
-       <!-- <div><input type="search" placeholder="Search"></div> -->
-      
+<!--------Search function form here--------->
+
+<div class="searchBox">
+    <input type="search"   class="searchText" placeholder="Search"   />
+     <div id="searchBtn">  
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div> 
+    
+
+</div>
       
       
       
@@ -800,6 +803,12 @@ document.getElementById("cartItems").innerText = len;
 document.querySelector("#dd").addEventListener("click",  mya18)
 function mya18(){
   window.location.reload();
+
+}
+document.querySelector("#searchBtn").addEventListener("click",  mysea)
+function mysea(){
+  
+  window.location.href="#"
 
 }
 
