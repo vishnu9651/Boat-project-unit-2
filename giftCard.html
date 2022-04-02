@@ -346,6 +346,10 @@
             font-family: sans-serif;
         }
 
+        .info li{
+            list-style: disc;
+        }
+
         .div4 img {
             height: 600px;
             width: 600px;
@@ -435,7 +439,7 @@
             font-family: sans-serif;
         }
 
-        .name {
+        .pname {
             margin-left: 10px;
             margin-top: 10px;
             font-family: sans-serif;
@@ -643,9 +647,9 @@ a:hover {
             <div><a href="/Boat-project-unit-2/"><img
                         src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/user_1.png?v=1606314823" alt="">
                 </a></div>
-            <div><a href="/Boat-project-unit-2/cart.html"> <img
+            <div><a href="cart.html"> <img
                         src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/cart.png?v=1606314839" alt=""> </a>
-                <div id="cartItems">0 </div>
+                <div id="cartItems"> </div>
             </div>
 
             <!-- <div><img src="https://cdn.shopifyshopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt="">
@@ -1026,7 +1030,7 @@ a:hover {
 
         var name = document.createElement("h4");
         name.innerText = el.name;
-        name.setAttribute("class", "name")
+        name.setAttribute("class", "pname")
 
         var price = document.createElement("h3");
         price.innerText = el.price;
@@ -1044,4 +1048,7 @@ a:hover {
 
         document.querySelector(".products").append(div);
     })
+
+    var length = JSON.parse(localStorage.getItem("cart")).length;
+    document.querySelector("#cartItems").append(length);
 </script>

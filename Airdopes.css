@@ -59,12 +59,12 @@ body{
    background-color: white;
    font-size: 16px;
    }
-
+  
    #inner1{
        margin: auto;
-       height: 790px;
+       height: 780px;
        width: 70%;
-       border-radius: 15px; 
+       border-radius: 15px;
        background-color: #212121;
    }
    #inner1>p{
@@ -91,11 +91,14 @@ body{
        width: 60%;
    }
    .pic{
-       height: 300px;
-       margin-top: -5%;
-       margin-left: 22%;
+       height: 340px;
+       width: 60%;
+       margin-top: -10%;
+       margin-left: 20%;
    }
    .item{
+       margin-top: 0%;
+       font-size: 30px;
        text-align: center;
        color: white;
    }
@@ -103,7 +106,7 @@ body{
        font-size: 20px;
        margin-left: 12%;
        color:rgb(209, 71, 71);
-
+  
    }
    .prod{
        color: grey;
@@ -126,7 +129,8 @@ body{
    }
    .txt{
        text-align: center;
-       margin-top: 0%;
+       margin-top: -5%;
+       font-size: bold;
        color: white;
        font-size: 20px;
    }
@@ -153,9 +157,9 @@ body{
     border: 2px solid red;
     background-color: red;
     color: white;
-}
-/* Footer */
-.des .btn {
+  }
+  /* Footer */
+  .des .btn {
     color: white;
     background-color: #ff0000;
     width: 138px;
@@ -317,3 +321,4 @@ body{
   .shpng a{
   color: #000;
   }
+  

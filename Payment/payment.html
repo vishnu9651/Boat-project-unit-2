@@ -14,7 +14,7 @@
             gap:0px;
         }
         #address{
-            background-color: lightcyan;
+            background-color:lightgrey;
             
             height:700px;
             width:900px
@@ -92,14 +92,15 @@
   height:100%;
   padding:12px;
   font-size: 17px;
-  background: lightgreen;
+  background: gray;
   color:#fff;
   margin-top: 0px;
   cursor: pointer;
 }
 
 .submit-btn:hover{
-  background: #2ecc71;
+  background: #2ecc71
+;
 }
 
     </style>
@@ -152,7 +153,7 @@
                 </div>
                 <div class="inputBox">
                     <span>credit card number :</span>
-                    <input type="number" placeholder="1111-2222-3333-4444">
+                    <input type="number" placeholder="1111-2222-3333-4444" maxlength="16">
                 </div>
                 <div class="inputBox">
                     <span>exp month :</span>
@@ -166,9 +167,9 @@
                     </div>
                     <div class="inputBox">
                         <span>CVV :</span>
-                        <input type="text" placeholder="123">
+                        <input type="password" placeholder="123" maxlength="3">
                     </div>
-                    <input type="submit" value="proceed to checkout" class="submit-btn">
+                    <a href="otp.html"><input type="submit" value="proceed to checkout" class="submit-btn"></a>
                 </div>
 
             </div>
@@ -187,4 +188,11 @@
 </div>
     </div>
 </body>
-</html>
+ </html>
+<!-- <script>
+    document.querySelector("#form").addEventListener("submit", myfun)
+    function myfun(){
+    event.preventDefault()
+    window.location.href="boat.html"
+    }
+</script> --> -->
