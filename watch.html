@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart2</title>
+    <title> Xtend Smart watch - boAt-lifestyle</title>
     <script
       src="https://kit.fontawesome.com/24c494a6b6.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0057/8938/4802/files/32x32.png?v=1587196217" type="image/png">
     <link rel="stylesheet" href="watch.css">
+    <link rel="stylesheet" href="https://www.boat-lifestyle.com/">
 </head>
 <body>
     <div class="announcment">
@@ -23,7 +25,7 @@
      <!-- announcment part done here -->
      
      <div class="navbar">
-         <div>  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_137f5a28-b960-4963-b1fd-e91c60e436a9_200x.png?v=1640587883" alt=""></div>
+         <div id="homebtn">  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_137f5a28-b960-4963-b1fd-e91c60e436a9_200x.png?v=1640587883" alt=""></div>
         
          <div class="menu">
             <div>Shop <span> <i class="fa-solid fa-angle-down"></i>
@@ -349,5 +351,11 @@
         localStorage.setItem("cart",JSON.stringify(cartData))
         window.location.href = "cart.html";
     }
+
+  document.querySelector("#homebtn").addEventListener("click", myhome)
+  
+  function myhome(){
+      window.location.href="HomePage.html"
+  }
     
 </script> 
