@@ -459,3 +459,15 @@ function mya18(){
   window.location.href="dailyDeals.html"
 
 }
+ 
+document.querySelector("#searchBtn").addEventListener("click",  mysea)
+function mysea(){
+  
+  window.location.href="#"
+
+}
+ 
+
+ 
+
+ 
