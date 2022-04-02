@@ -21,7 +21,42 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.boat-lifestyle.com/">
    <link rel="stylesheet" href="dailydeals.css">
+    <style>
+         #bigbox{
+           
+            width:200px;
+            /* border:1px solid black; */
+            padding:15px;
+            text-decoration: none;
+            margin-top: -1100px;
+        }
+        #bigbox>button{
+            margin: 1px;
+            text-transform: uppercase;
+        }
     
+        #move{
+            
+            
+            /* border:1px solid red; */
+            margin:auto;
+            background-color: none;
+             
+        }
+       
+        a{
+           text-decoration:none;
+
+        }
+        #display{
+            display: flex;
+            text-align: start;
+        }
+        button{
+            background: none;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -51,12 +86,11 @@
 <!--------Search function form here--------->
 
 <div class="searchBox">
-    <input type="search"   class="searchText" placeholder="Search"   />
+    <input type="search"   class="searchText" placeholder="Search" onkeyup="Search()"  />
      <div id="searchBtn">  
         <i class="fa-solid fa-magnifying-glass"></i>
     </div> 
     
-
 </div>
       
       
@@ -81,133 +115,28 @@
     <p id="p" >Home / Daily Deals </p>
     <h1 id="h1">Daily Deals</h1>
    
+<div id="display">
+    <div id="move">
+            <div id="bigbox">
+            <button id="btn"><a href="dailyDeals.html"> earphones</a></button>
+            <button id="btn1"><a href="watch.html">smart watches</a></button>
+            <button id="btn2"><a href="earbuds.html">wireless earbuds</a></button>
+            <button id="btn3"><a href="headphone.html">headphones</a></button>
+            <button id="btn4"><a href="speaker.html">speakers</a></button>
+            <button id="btn5"><a href="earphone.html">wired earphone</a></button>
+            </div>
+    </div>
 
- <!-- smart watches end here and  just  top wireless start-->
+    <div>
+        <!-- smart watches end here and  just  top wireless start-->
  <div class="heading_text">
-  <h1> Top Wireless</h1>
-</div>
-<div class="item_container">
-  <div class="inner_item_container">
-      <div>
-          <p class="short_des">you save 62%</p>
-          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/35ca6350-d6f3-4bc2-a742-01b2c88d80c4_360x.png?v=1625552657"
-              alt="">
-      </div>
-      <div class="text_box">
-          <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-          </div>
-          <!---Div for prices and brand name-->
-          <div class="description">
-              <div class="tittle"> boAt Rockerz 255 Pro+</div>
-
-              <div class="price">
-                  <p>Rs. 1,499.00</p>
-                  <p>Rs. 3,990.00 </p>
-              </div>
-              <div class="product_description">
-                  <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
-                  <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
-                  <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
-                  </p>
-              </div>
-
-
-              <button id="btn10" class="btn_add_cart">Add To Cart</button>
-
-          </div>
-      </div>
-
+    <h1> Top Wireless</h1>
   </div>
-  <div  class="inner_item_container">  
-      <div>
-          <p class="short_des">you save 69%</p>
-          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/eb8e0fbd-c412-48b3-9c91-5b49ddf35800_360x.png?v=1625045744"
-              alt="">
-      </div>
-      <div class="text_box">
-          <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-          </div>
-          <!---Div for prices and brand name-->
-          <div class="description">
-              <div class="tittle">boAt Rockerz 450</div>
-
-              <div class="price">
-                  <p>Rs. 1,199.00</p>
-                  <p>Rs. 3,999.00 </p>
-              </div>
-              <div class="product_description">
-                  <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
-                  <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
-                  <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
-                  </p>
-              </div>
-
-
-              <button id="btn11" class="btn_add_cart">Add To Cart</button>
-
-          </div>
-      </div> 
-
-  </div>
-  <div class="inner_item_container">
-      <div>
-          <p class="short_des"> you save 66%</p>
-          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f7d33ad-39a9-4426-836e-c300814839b9_360x.png?v=1625046105"
-              alt="">
-      </div>
-      <div class="text_box">
-          <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-          </div>
-          <!---Div for prices and brand name-->
-          <div class="description">
-              <div class="tittle"> boAt Rockerz 235 V2</div>
-
-              <div class="price">
-                  <p>Rs. 999.00</p>
-                  <p>Rs. 2,990.00 </p>
-              </div>
-              <div class="product_description">
-                  <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
-                  <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
-                  <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
-                  </p>
-              </div>
-
-
-              <button id="btn12" class="btn_add_cart">Add To Cart</button>
-
-          </div>
-      </div>
-
-  </div>
-</div>
-
-
-
-   <!--top wireless end here and   top wired start-->
-   <div class="heading_text">
-    <h1>Top Wired</h1>
-</div>
-<div class="item_container">
+  <div class="item_container">
     <div class="inner_item_container">
         <div>
-            <p class="short_des">you save 60%</p>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/553af994-244a-4b81-9d9e-9967a1b966b3_360x.png?v=1625046259"
+            <p class="short_des">you save 62%</p>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/35ca6350-d6f3-4bc2-a742-01b2c88d80c4_360x.png?v=1625552657"
                 alt="">
         </div>
         <div class="text_box">
@@ -220,11 +149,11 @@
             </div>
             <!---Div for prices and brand name-->
             <div class="description">
-                <div class="tittle"> boAt BassHeads</div>
-
+                <div class="tittle"> boAt Rockerz 255 Pro+</div>
+  
                 <div class="price">
-                    <p>Rs. 399.00</p>
-                    <p>Rs. 999.00 </p>
+                    <p>Rs. 1,499.00</p>
+                    <p>Rs. 3,990.00 </p>
                 </div>
                 <div class="product_description">
                     <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
@@ -232,53 +161,18 @@
                     <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
                     </p>
                 </div>
-
-
-                <button id="btn13" class="btn_add_cart">Add To Cart</button>
-
+  
+  
+                <button id="btn10" class="btn_add_cart">Add To Cart</button>
+  
             </div>
         </div>
-
+  
     </div>
-    <div class="inner_item_container">
+    <div  class="inner_item_container">  
         <div>
-            <p class="short_des">you save 70%</p>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_360x.png?v=1574927262" alt="">
-        </div>
-        <div class="text_box">
-            <div class="stars">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-            </div>
-            <!---Div for prices and brand name-->
-            <div class="description">
-                <div class="tittle">boAt BassHead 103</div>
-
-                <div class="price">
-                    <p>Rs. 379.00</p>
-                    <p>Rs. 1,2990.00 </p>
-                </div>
-                <div class="product_description">
-                    <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
-                    <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
-                    <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
-                    </p>
-                </div>
-
-
-                <button id="btn14" class="btn_add_cart">Add To Cart</button>
-
-            </div>
-        </div>
-
-    </div>
-    <div class="inner_item_container">
-        <div>
-            <p class="short_des">you save 67%</p>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/8ec58553-3255-48ec-929e-4838215b640c_360x.png?v=1625046271"
+            <p class="short_des">you save 69%</p>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/eb8e0fbd-c412-48b3-9c91-5b49ddf35800_360x.png?v=1625045744"
                 alt="">
         </div>
         <div class="text_box">
@@ -291,10 +185,46 @@
             </div>
             <!---Div for prices and brand name-->
             <div class="description">
-                <div class="tittle">boAt BassHeads 900</div>
-
+                <div class="tittle">boAt Rockerz 450</div>
+  
                 <div class="price">
-                    <p>Rs. 799.00</p>
+                    <p>Rs. 1,199.00</p>
+                    <p>Rs. 3,999.00 </p>
+                </div>
+                <div class="product_description">
+                    <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
+                    <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
+                    <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
+                    </p>
+                </div>
+  
+  
+                <button id="btn11" class="btn_add_cart">Add To Cart</button>
+  
+            </div>
+        </div> 
+  
+    </div>
+    <div class="inner_item_container">
+        <div>
+            <p class="short_des"> you save 66%</p>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f7d33ad-39a9-4426-836e-c300814839b9_360x.png?v=1625046105"
+                alt="">
+        </div>
+        <div class="text_box">
+            <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <!---Div for prices and brand name-->
+            <div class="description">
+                <div class="tittle"> boAt Rockerz 235 V2</div>
+  
+                <div class="price">
+                    <p>Rs. 999.00</p>
                     <p>Rs. 2,990.00 </p>
                 </div>
                 <div class="product_description">
@@ -303,256 +233,378 @@
                     <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
                     </p>
                 </div>
-
-
-                <button id="btn15" class="btn_add_cart">Add To Cart</button>
-
+  
+  
+                <button id="btn12" class="btn_add_cart">Add To Cart</button>
+  
             </div>
         </div>
+  
+    </div>
+  </div>
+  
+  
+  
+     <!--top wireless end here and   top wired start-->
+     <div class="heading_text">
+      <h1>Top Wired</h1>
+  </div>
+  <div class="item_container">
+      <div class="inner_item_container">
+          <div>
+              <p class="short_des">you save 60%</p>
+              <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/553af994-244a-4b81-9d9e-9967a1b966b3_360x.png?v=1625046259"
+                  alt="">
+          </div>
+          <div class="text_box">
+              <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+              </div>
+              <!---Div for prices and brand name-->
+              <div class="description">
+                  <div class="tittle"> boAt BassHeads</div>
+  
+                  <div class="price">
+                      <p>Rs. 399.00</p>
+                      <p>Rs. 999.00 </p>
+                  </div>
+                  <div class="product_description">
+                      <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
+                      <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
+                      <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
+                      </p>
+                  </div>
+  
+  
+                  <button id="btn13" class="btn_add_cart">Add To Cart</button>
+  
+              </div>
+          </div>
+  
+      </div>
+      <div class="inner_item_container">
+          <div>
+              <p class="short_des">you save 70%</p>
+              <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_360x.png?v=1574927262" alt="">
+          </div>
+          <div class="text_box">
+              <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+              </div>
+              <!---Div for prices and brand name-->
+              <div class="description">
+                  <div class="tittle">boAt BassHead 103</div>
+  
+                  <div class="price">
+                      <p>Rs. 379.00</p>
+                      <p>Rs. 1,2990.00 </p>
+                  </div>
+                  <div class="product_description">
+                      <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
+                      <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
+                      <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
+                      </p>
+                  </div>
+  
+  
+                  <button id="btn14" class="btn_add_cart">Add To Cart</button>
+  
+              </div>
+          </div>
+  
+      </div>
+      <div class="inner_item_container">
+          <div>
+              <p class="short_des">you save 67%</p>
+              <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/8ec58553-3255-48ec-929e-4838215b640c_360x.png?v=1625046271"
+                  alt="">
+          </div>
+          <div class="text_box">
+              <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+              </div>
+              <!---Div for prices and brand name-->
+              <div class="description">
+                  <div class="tittle">boAt BassHeads 900</div>
+  
+                  <div class="price">
+                      <p>Rs. 799.00</p>
+                      <p>Rs. 2,990.00 </p>
+                  </div>
+                  <div class="product_description">
+                      <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
+                      <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
+                      <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
+                      </p>
+                  </div>
+  
+  
+                  <button id="btn15" class="btn_add_cart">Add To Cart</button>
+  
+              </div>
+          </div>
+  
+      </div>
+  </div>
+  
+  
+  
+  
+  <!----end top wired-->
+  
+  
+  <div class="heading_text">
+   <h1> BlueTooth Device</h1>
+  </div>
+  <div class="item_container">
+   <div class="inner_item_container">
+       <div>
+           <p class="short_des">NEW-ARRIVAL</p>
+           <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_1_e171664a-1254-45e6-9dde-2ac4f0a815c9_360x.png?v=1648466727"
+               alt="">
+       </div>
+       <div class="text_box">
+           <div class="stars">
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+           </div>
+           <!---Div for prices and brand name-->
+           <div class="description">
+               <div class="tittle">boAt Deuce 500</div>
+  
+               <div class="price">
+                   <p>Rs. 499.00</p>
+                   <p>Rs. 899.00 </p>
+               </div>
+               <div class="product_description">
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
+                   </p>
+               </div>
+  
+  
+               <button id="btn4" class="btn_add_cart">Add To Cart</button>
+  
+           </div>
+       </div>
+  
+   </div>
+   <div class="inner_item_container">
+       <div>
+           <p class="short_des"> NEW-ARRIVAL</p>
+           <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_9230f72d-9f86-4aec-9ae2-a7d87d332877_360x.png?v=1647426798"
+               alt="">
+       </div>
+       <div class="text_box">
+           <div class="stars">
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+           </div>
+           <!---Div for prices and brand name-->
+           <div class="description">
+               <div class="tittle"> Airdopes 411 ANC</div>
+  
+               <div class="price">
+                   <p>Rs. 2,299.00</p>
+                   <p>Rs. 4,990.00 </p>
+               </div>
+               <div class="product_description">
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
+                   </p>
+               </div>
+  
+  
+               <button id="btn5" class="btn_add_cart" value="">Add To Cart</button>
+  
+           </div>
+       </div>
+  
+   </div>
+   <div class="inner_item_container">
+       <div>
+           <p class="short_des">NEW-ARRIVAL</p>
+           <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_420x.png?v=1625046144"
+               alt="">
+       </div>
+       <div class="text_box">
+           <div class="stars">
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+           </div>
+           <!---Div for prices and brand name-->
+           <div class="description">
+               <div class="tittle">boAt Rockerz 550</div>
+  
+               <div class="price">
+                   <p>Rs. 1,199.00</p>
+                   <p>Rs. 4,990.00 </p>
+               </div>
+               <div class="product_description">
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
+                   </p>
+               </div>
+  
+  
+               <button id="btn6" class="btn_add_cart">Add To Cart</button>
+  
+           </div>
+       </div>
+  
+   </div>
+  </div>
+  
+  
+  
+  
+  <!----new-->
+  
+  <div class="heading_text">
+   <h1>Premium Devices</h1>
+  </div>
+  <div class="item_container">
+   <div class="inner_item_container">
+       <div>
+           <p class="short_des">You save 56%</p>
+           <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/viper-green_460x.png?v=1642405569"
+               alt="">
+       </div>
+       <div class="text_box">
+           <div class="stars">
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+           </div>
+           <!---Div for prices and brand name-->
+           <div class="description">
+               <div class="tittle"> boAt Airdopes 131 - Wireless Earbuds</div>
+  
+               <div class="price">
+                   <p>Rs. 1,299.00</p>
+                   <p>Rs. 2,990.00 </p>
+               </div>
+               <div class="product_description">
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
+                   </p>
+               </div>
+  
+  
+               <button id="btn1" class="btn_add_cart" value="btn1">Add To Cart</button>
+  
+           </div>
+       </div>
+  
+   </div>
+   <div class="inner_item_container">
+       <div>
+           <p class="short_des">you save 64%</p>
+           <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-img-R333_360x.png?v=1641801662"
+               alt="">
+       </div>
+       <div class="text_box">
+           <div class="stars">
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+           </div>
+           <!---Div for prices and brand name-->
+           <div class="description">
+               <div class="tittle"> boAt Rockerz 333</div>
+  
+               <div class="price">
+                   <p>Rs. 1,399.00</p>
+                   <p>Rs. 2,990.00 </p>
+               </div>
+               <div class="product_description">
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
+                   </p>
+               </div>
+  
+  
+               <button id="btn2" class="btn_add_cart" value="btn2">Add To Cart</button>
+  
+           </div>
+       </div>
+  
+   </div>
+   <div class="inner_item_container" id="xtend">
+       <div>
+           <p class="short_des">you save 64%</p>
+           <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_529ecf13-c993-4fe7-a2d6-9357f1a47db4_360x.png?v=1645164257"
+               alt="">
+       </div>
+       <div class="text_box">
+           <div class="stars">
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+           </div>
+           <!---Div for prices and brand name-->
+           <div class="description">
+               <div class="tittle">boAt Watch Xtend</div>
+  
+               <div class="price">
+                   <p>Rs. 2,799.00</p>
+                   <p>Rs. 7,990.00 </p>
+               </div>
+               <div class="product_description">
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
+                   <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
+                   </p>
+               </div>
+  
+  
+               <button id="btn3" class="btn_add_cart">Add To Cart</button>
+  
+           </div>
+       </div>
+  
+   </div>
+  </div>
+  
+  
 
     </div>
+
 </div>
 
-
-
-
-<!----end top wired-->
-
-
-<div class="heading_text">
- <h1> BlueTooth Device</h1>
-</div>
-<div class="item_container">
- <div class="inner_item_container">
-     <div>
-         <p class="short_des">NEW-ARRIVAL</p>
-         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_1_e171664a-1254-45e6-9dde-2ac4f0a815c9_360x.png?v=1648466727"
-             alt="">
-     </div>
-     <div class="text_box">
-         <div class="stars">
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-         </div>
-         <!---Div for prices and brand name-->
-         <div class="description">
-             <div class="tittle">boAt Deuce 500</div>
-
-             <div class="price">
-                 <p>Rs. 499.00</p>
-                 <p>Rs. 899.00 </p>
-             </div>
-             <div class="product_description">
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
-                 </p>
-             </div>
-
-
-             <button id="btn4" class="btn_add_cart">Add To Cart</button>
-
-         </div>
-     </div>
-
- </div>
- <div class="inner_item_container">
-     <div>
-         <p class="short_des"> NEW-ARRIVAL</p>
-         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_9230f72d-9f86-4aec-9ae2-a7d87d332877_360x.png?v=1647426798"
-             alt="">
-     </div>
-     <div class="text_box">
-         <div class="stars">
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-         </div>
-         <!---Div for prices and brand name-->
-         <div class="description">
-             <div class="tittle"> Airdopes 411 ANC</div>
-
-             <div class="price">
-                 <p>Rs. 2,299.00</p>
-                 <p>Rs. 4,990.00 </p>
-             </div>
-             <div class="product_description">
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
-                 </p>
-             </div>
-
-
-             <button id="btn5" class="btn_add_cart" value="">Add To Cart</button>
-
-         </div>
-     </div>
-
- </div>
- <div class="inner_item_container">
-     <div>
-         <p class="short_des">NEW-ARRIVAL</p>
-         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_420x.png?v=1625046144"
-             alt="">
-     </div>
-     <div class="text_box">
-         <div class="stars">
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-         </div>
-         <!---Div for prices and brand name-->
-         <div class="description">
-             <div class="tittle">boAt Rockerz 550</div>
-
-             <div class="price">
-                 <p>Rs. 1,199.00</p>
-                 <p>Rs. 4,990.00 </p>
-             </div>
-             <div class="product_description">
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
-                 </p>
-             </div>
-
-
-             <button id="btn6" class="btn_add_cart">Add To Cart</button>
-
-         </div>
-     </div>
-
- </div>
-</div>
-
-
-
-
-<!----new-->
-
-<div class="heading_text">
- <h1>Premium Devices</h1>
-</div>
-<div class="item_container">
- <div class="inner_item_container">
-     <div>
-         <p class="short_des">You save 56%</p>
-         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/viper-green_460x.png?v=1642405569"
-             alt="">
-     </div>
-     <div class="text_box">
-         <div class="stars">
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-         </div>
-         <!---Div for prices and brand name-->
-         <div class="description">
-             <div class="tittle"> boAt Airdopes 131 - Wireless Earbuds</div>
-
-             <div class="price">
-                 <p>Rs. 1,299.00</p>
-                 <p>Rs. 2,990.00 </p>
-             </div>
-             <div class="product_description">
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
-                 </p>
-             </div>
-
-
-             <button id="btn1" class="btn_add_cart" value="btn1">Add To Cart</button>
-
-         </div>
-     </div>
-
- </div>
- <div class="inner_item_container">
-     <div>
-         <p class="short_des">you save 64%</p>
-         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-img-R333_360x.png?v=1641801662"
-             alt="">
-     </div>
-     <div class="text_box">
-         <div class="stars">
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-         </div>
-         <!---Div for prices and brand name-->
-         <div class="description">
-             <div class="tittle"> boAt Rockerz 333</div>
-
-             <div class="price">
-                 <p>Rs. 1,399.00</p>
-                 <p>Rs. 2,990.00 </p>
-             </div>
-             <div class="product_description">
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
-                 </p>
-             </div>
-
-
-             <button id="btn2" class="btn_add_cart" value="btn2">Add To Cart</button>
-
-         </div>
-     </div>
-
- </div>
- <div class="inner_item_container" id="xtend">
-     <div>
-         <p class="short_des">you save 64%</p>
-         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_529ecf13-c993-4fe7-a2d6-9357f1a47db4_360x.png?v=1645164257"
-             alt="">
-     </div>
-     <div class="text_box">
-         <div class="stars">
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-         </div>
-         <!---Div for prices and brand name-->
-         <div class="description">
-             <div class="tittle">boAt Watch Xtend</div>
-
-             <div class="price">
-                 <p>Rs. 2,799.00</p>
-                 <p>Rs. 7,990.00 </p>
-             </div>
-             <div class="product_description">
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Lightweight for portability</p>
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Uninterrupted listening for 3 hours</p>
-                 <p> <span><i class="fa-solid fa-square-full"></i></span> Truly wireless at a truly awesome price
-                 </p>
-             </div>
-
-
-             <button id="btn3" class="btn_add_cart">Add To Cart</button>
-
-         </div>
-     </div>
-
- </div>
-</div>
-
-
+ 
 
 
 
