@@ -346,7 +346,7 @@ function mycham3(){
 }
 document.querySelector("#myAccount").addEventListener("click",  mycham4)
 function mycham4(){
-  window.location.href=" "
+  window.location.href="# "
 
 }
 document.querySelector("#myCart").addEventListener("click",  mycham5)
