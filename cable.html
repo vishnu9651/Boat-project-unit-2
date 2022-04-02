@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart2</title>
-    <script
-      src="https://kit.fontawesome.com/24c494a6b6.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>boAt Deuce – boAt Lifestyle</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0057/8938/4802/files/32x32.png?v=1587196217" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.boat-lifestyle.com/">
+   <link rel="stylesheet" href="dailydeals.css">
+    
     <link rel="stylesheet" href="cable.css">
 </head>
 <body>
+    <!-- Cancel out noise with Airdopes  131.   -->
     <div class="announcment">
-        <a href=""></a>
+        <a href="/Boat-project-unit-2/Airdopes.html">
         <div class="inner_announcment">
             <b>
-                Cancel out noise with Airdopes 411 ANC. <span class="underline">Grab now</span>     
+                Cancel out noise with Airdopes 131 <span class="underline">Grab now</span>
             </b>
-        </div>
+        </div> </a>
      </div>
      <!-- announcment part done here -->
      
      <div class="navbar">
-         <div>  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_137f5a28-b960-4963-b1fd-e91c60e436a9_200x.png?v=1640587883" alt=""></div>
+            <div id="boat_logo">  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_137f5a28-b960-4963-b1fd-e91c60e436a9_200x.png?v=1640587883" alt=""> </div>
+            
+            <div class="menu">
+                <div title="Shop">Shop <span> <i class="fa-solid fa-angle-down"></i>
+                </span></div>
+                <div id="dd" title="Daily deals">Daily deals</div>
+                <div id="cham"  title="Move of Champions" >  Move of Champions</a></div>
+                <div title="More">More <span><i class="fa-solid fa-angle-down"></i></span> </div>
         
-         <div class="menu">
-            <div>Shop <span> <i class="fa-solid fa-angle-down"></i>
-            </span></div>
-            <div>Daily deals</div>
-            <div>Move of Champions</div>
-            <div>More <span><i class="fa-solid fa-angle-down"></i></span></div>
-           
-         </div>
-         <form action="" id="form">
-            <input type="search" id="srch" class="form-control" placeholder="Search" aria-label="Search" />
-         </form>
-         <!-- <div><input type="search" placeholder="Search"></div> -->
+     </div>
+  
+  <!--------Search function form here--------->
+  
+  <div class="searchBox">
+      <input type="search"   class="searchText" placeholder="Search"   />
+       <div id="searchBtn">  
+          <i class="fa-solid fa-magnifying-glass"></i>
+      </div> 
+      
+  
+  </div>
+        
+        
+        
+        
          <div class="end_nav">
               
-           <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt=""> </div>
-             <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/user_1.png?v=1606314823" alt=""></div> 
-           <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/cart.png?v=1606314839" alt=""></div>
-
-         </div>
-     </div>
+           <div id="card_gift" title="Gift Card" >  <img  src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt=""> </div>
+             <div id="myAccount" title="My Account" ><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/user_1.png?v=1606314823" alt="">  </div> 
+           <div id="myCart" title="Cart"  > <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/cart.png?v=1606314839" alt="">  <div id="cartItems">0 </div></div>
+  
+           
+        </div>
+    </div>
+  
+  
+  
+  
      <div id="inner1">
          <p>Home/boAt Deuce 500</p>
          <div id="save">
@@ -350,4 +380,50 @@
         window.location.href = "cart.html";
     }
     
+    
+document.querySelector("#cham").addEventListener("click",  mycham1)
+function mycham1(){
+  window.location.href="champion.html"
+
+}
+document.querySelector("#boat_logo").addEventListener("click",  mycham2)
+function mycham2(){
+   window.location.href="HomePage.html"
+
+}
+
+document.querySelector("#card_gift").addEventListener("click",  mycham3)
+function mycham3(){
+  window.location.href="giftCard.html"
+
+}
+document.querySelector("#myAccount").addEventListener("click",  mycham4)
+function mycham4(){
+  window.location.href="C:/XLR8/Desktop/Demo/Boat-project-unit-2/Payment/signup.html"
+
+}
+document.querySelector("#myCart").addEventListener("click",  mycham5)
+function mycham5(){
+  window.location.href="cart.html"
+
+}
+ 
+var addCartArr = JSON.parse(localStorage.getItem("cart"))
+
+console.log(addCartArr)
+var len = addCartArr.length
+console.log(len)
+document.getElementById("cartItems").innerText = len;
+
+document.querySelector("#dd").addEventListener("click",  mya18)
+function mya18(){
+  window.location.reload="dailyDeals.html";
+
+}
+document.querySelector("#searchBtn").addEventListener("click",  mysea)
+function mysea(){
+  
+  window.location.href="#"
+
+}
 </script> 
