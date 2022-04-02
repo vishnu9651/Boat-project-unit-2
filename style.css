@@ -69,25 +69,7 @@ body {
   
  
 }
- /* a  {
-text-decoration: none;
-}
-
-.searchText{
-  border-radius: 5rem;
-  width: 20rem;
-  border: none;
-  outline: none;
-   transition: all 0.2s linear;
-}
-.searchText:focus{
-  outline: none;
-}
-.searchBtn{
-  width: 5rem;
-  height: 5rem;
-  color: white;
-} */
+ 
 .searchBox{
   display: flex;
  
