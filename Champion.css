@@ -106,7 +106,7 @@ margin-left: 16%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 10%;
     font-weight: 400;
-    color: red
+    color: red;
 }
 
 #txt2{
@@ -165,7 +165,9 @@ margin-left: 16%;
 
 h5{
     text-align: center;
+    margin-top: 5%;
     font-style: italic;
+    font-size: 35px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
@@ -175,13 +177,13 @@ h5{
 }
 
 .txt2>img{
-    margin-top: -5%;
+    margin-top: 12%;
     margin-left: 5%;
     width: 90%;
 }
 
 .txt3>img{
-    margin-top: 3%;
+    margin-top: 17%;
     margin-left: 5%;
     width: 90%;
 }
@@ -244,13 +246,13 @@ h5{
 }
 
 .txt4>img{
-    margin-top: 5%;
+    margin-top: 18%;
     margin-left: 5%;
     width: 90%;
 }
 
 .txt5>img{
-    margin-top: 3%;
+    margin-top: 15%;
     margin-left: 5%;
     width: 90%;
 }
@@ -306,8 +308,9 @@ h5{
 }
 
 .box10>p{
-    color: white;
+    color: black;
     text-align: center;
+    font-weight: bold;
     font-size: 20px;
 }
 
@@ -329,7 +332,7 @@ h5{
 }
 
 #box11>button{
-    margin-top: 60%;
+    margin-top: 55%;
     height: 50px;
     width: 250px;
     font-size: 25px;
