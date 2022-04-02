@@ -647,7 +647,7 @@ a:hover {
             <div><a href="/Boat-project-unit-2/"><img
                         src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/user_1.png?v=1606314823" alt="">
                 </a></div>
-            <div><a href="/Boat-project-unit-2/cart.html"> <img
+            <div><a href="cart.html"> <img
                         src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/cart.png?v=1606314839" alt=""> </a>
                 <div id="cartItems"> </div>
             </div>
@@ -1049,6 +1049,6 @@ a:hover {
         document.querySelector(".products").append(div);
     })
 
-    var length = data.length;
+    var length = JSON.parse(localStorage.getItem("cart")).length;
     document.querySelector("#cartItems").append(length);
 </script>
