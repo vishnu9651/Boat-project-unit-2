@@ -346,7 +346,7 @@ function mycham3(){
 }
 document.querySelector("#myAccount").addEventListener("click",  mycham4)
 function mycham4(){
-  window.location.href="# "
+  window.location.href="/Boat-project-unit-2/Payment/signup.html "
 
 }
 document.querySelector("#myCart").addEventListener("click",  mycham5)
@@ -463,7 +463,7 @@ function mya18(){
 document.querySelector("#searchBtn").addEventListener("click",  mysea)
 function mysea(){
   
-  window.location.href="#"
+  window.location.href="dailyDeals.html"
 
 }
  
