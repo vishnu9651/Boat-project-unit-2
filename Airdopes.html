@@ -406,7 +406,7 @@ function mycham5(){
 
 }
  
-var addCartArr = JSON.parse(localStorage.getItem("cart"))
+var addCartArr = JSON.parse(localStorage.getItem("cart")) || []
 
 console.log(addCartArr)
 var len = addCartArr.length

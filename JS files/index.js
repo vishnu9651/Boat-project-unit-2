@@ -179,8 +179,12 @@ var productData = [
  
   var cartArr = JSON.parse(localStorage.getItem("cart")) || []
   
-  document.getElementById("btn1").addEventListener("click" , btn1)
+  var el =document.getElementById("btn1")
+  if(el){
+    el.addEventListener("click" , btn1)
 
+  }
+ 
   function btn1(){
    event.preventDefault();
    cartArr.push( productData[0])
