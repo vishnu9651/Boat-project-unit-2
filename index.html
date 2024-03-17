@@ -1225,6 +1225,154 @@
 
 </html>
  
- <script src="/Boat-project-unit-2/JS files/index.js"></script>
+ <script src="/BOAT-PROJECT-UNIT-2/JS files/index.js"></script>
 
+ <script>
+    
+    var Boat = [
+        {
+           image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/6101baeb-5d36-465c-ad23-80cdb133d8f5_540x.png?v=1625045659",
+           name: "BOAT Airdopes 441 Pro - Bluetooth Wireless Earbuds",
+           type: "WIRELESS EARBUDS",
+           rupee: "Rs.",
+           price: "2999.00",
+           stkPrice: "Rs.5,990.00",
+           off: "YOU SAVE 50%",
+           text: "Inclusive of all taxes"
+        },
+    ]
+
+    var cartData = JSON.parse(localStorage.getItem("cart"))||[];
+    window.addEventListener("load",function () {
+      display(Boat);
+    });
+
+    function display(Boat){
+       console.log("Hello")
+        document.querySelector("#inside").innerHTML = "";
+        Boat.map(function(el){      
+            var box = document.createElement("div")
+            
+            var img = document.createElement("img");
+            img.src = el.image;
+            img.setAttribute("class","pic")
+            
+            var nam1 = document.createElement("h2");
+            nam1.textContent = el.name;
+            nam1.setAttribute("class","item")
+
+            var nam2 = document.createElement("h4");
+            nam2.textContent = el.type;
+            nam2.setAttribute("class","prod")
+            
+            var symb = document.createElement("h5")
+            symb.textContent = el.rupee;
+            symb.setAttribute("class","rs")
+
+            var amount = document.createElement("div");
+            amount.setAttribute("class","mrp")
+
+            var prc = document.createElement("h5");
+            prc.textContent = el.price
+            prc.setAttribute("class","pricing")
+
+            var stkprc = document.createElement("h6");
+            stkprc.textContent = el.stkPrice
+            stkprc.setAttribute("class","strike")
+
+            var offer = document.createElement("p");
+            offer.textContent = el.off
+            offer.setAttribute("class","txt")
+            
+            var small = document.createElement("p");
+            small.textContent = el.text
+            small.setAttribute("class","mini")
+
+             var btn = document.createElement("button")
+             btn.innerText = "ADD TO CART"
+             btn.setAttribute("class","bag")
+             btn.addEventListener("click",function(){
+                 addToCart(el)
+             })
+
+             var btn2 = document.createElement("button")
+             btn2.innerText = "BUY IT NOW"
+             btn2.setAttribute("class","bag2")
+             btn2.addEventListener("click",function(){
+                 addToCart2(el)
+             })
+            
+            amount.append(prc,stkprc)
+            box.append(img,nam1,nam2,symb,amount,offer,small,btn,btn2)
+            document.querySelector("#inside").append(box);
+    })
+    };
+   
+    function addToCart(el){
+        console.log("cart")
+        cartData.push(el)
+        localStorage.setItem("cart",JSON.stringify(cartData))
+        alert("Item added to cart") 
+        window.location.href = "cart.html";
+    }
+
+    function addToCart2(el){
+        console.log("cart")
+        cartData.push(el)
+        localStorage.setItem("cart",JSON.stringify(cartData))
+        window.location.href = "cart.html";
+    }
+    
+
+
+    
  
+
+ document.querySelector("#cham").addEventListener("click",  mycham1)
+ function mycham1(){
+   window.location.href="champion.html"
+ 
+ }
+ document.querySelector("#boat_logo").addEventListener("click",  mycham2)
+ function mycham2(){
+    window.location.href="index.html"
+ 
+ }
+ 
+ document.querySelector("#card_gift").addEventListener("click",  mycham3)
+ function mycham3(){
+   window.location.href="giftCard.html"
+ 
+ }
+ document.querySelector("#myAccount").addEventListener("click",  mycham4)
+ function mycham4(){
+   window.location.href="C:/XLR8/Desktop/Demo/Boat-project-unit-2/Payment/signup.html"
+ 
+ }
+ document.querySelector("#myCart").addEventListener("click",  mycham5)
+ function mycham5(){
+   window.location.href="cart.html"
+ 
+ }
+  
+ var addCartArr = JSON.parse(localStorage.getItem("cart"))
+ 
+ console.log(addCartArr)
+ var len = addCartArr.length
+ console.log(len)
+ document.getElementById("cartItems").innerText = len;
+ 
+ document.querySelector("#dd").addEventListener("click",  mya18)
+ function mya18(){
+   window.location.href="dailyDeals.html"
+ 
+ }
+ document.querySelector("#searchBtn").addEventListener("click",  mysea)
+ function mysea(){
+   
+   window.location.href="#"
+ 
+ }
+ 
+ 
+</script> 
